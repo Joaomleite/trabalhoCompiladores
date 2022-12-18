@@ -1,0 +1,3792 @@
+Created by PLY version 3.11 (http://www.dabeaz.com/ply)
+
+Grammar
+
+Rule 0     S' -> expressao
+Rule 1     expressao -> frase
+Rule 2     expressao -> empty
+Rule 3     frase -> palavra SPACE frase
+Rule 4     frase -> palavra
+Rule 5     palavra -> upperCase palavra
+Rule 6     palavra -> lowerCase palavra
+Rule 7     palavra -> upperCase
+Rule 8     palavra -> lowerCase
+Rule 9     upperCase -> A
+Rule 10    upperCase -> B
+Rule 11    upperCase -> C
+Rule 12    upperCase -> D
+Rule 13    upperCase -> E
+Rule 14    upperCase -> F
+Rule 15    upperCase -> G
+Rule 16    upperCase -> H
+Rule 17    upperCase -> I
+Rule 18    upperCase -> J
+Rule 19    upperCase -> K
+Rule 20    upperCase -> L
+Rule 21    upperCase -> M
+Rule 22    upperCase -> N
+Rule 23    upperCase -> O
+Rule 24    upperCase -> P
+Rule 25    upperCase -> Q
+Rule 26    upperCase -> R
+Rule 27    upperCase -> S
+Rule 28    upperCase -> T
+Rule 29    upperCase -> U
+Rule 30    upperCase -> V
+Rule 31    upperCase -> X
+Rule 32    upperCase -> W
+Rule 33    upperCase -> Y
+Rule 34    upperCase -> Z
+Rule 35    lowerCase -> a
+Rule 36    lowerCase -> b
+Rule 37    lowerCase -> c
+Rule 38    lowerCase -> d
+Rule 39    lowerCase -> e
+Rule 40    lowerCase -> f
+Rule 41    lowerCase -> g
+Rule 42    lowerCase -> h
+Rule 43    lowerCase -> i
+Rule 44    lowerCase -> j
+Rule 45    lowerCase -> k
+Rule 46    lowerCase -> l
+Rule 47    lowerCase -> m
+Rule 48    lowerCase -> n
+Rule 49    lowerCase -> o
+Rule 50    lowerCase -> p
+Rule 51    lowerCase -> q
+Rule 52    lowerCase -> r
+Rule 53    lowerCase -> s
+Rule 54    lowerCase -> t
+Rule 55    lowerCase -> u
+Rule 56    lowerCase -> v
+Rule 57    lowerCase -> x
+Rule 58    lowerCase -> w
+Rule 59    lowerCase -> y
+Rule 60    lowerCase -> z
+Rule 61    empty -> <empty>
+
+Terminals, with rules where they appear
+
+A                    : 9
+B                    : 10
+C                    : 11
+D                    : 12
+E                    : 13
+F                    : 14
+G                    : 15
+H                    : 16
+I                    : 17
+J                    : 18
+K                    : 19
+L                    : 20
+M                    : 21
+N                    : 22
+O                    : 23
+P                    : 24
+Q                    : 25
+R                    : 26
+S                    : 27
+SPACE                : 3
+T                    : 28
+U                    : 29
+V                    : 30
+W                    : 32
+X                    : 31
+Y                    : 33
+Z                    : 34
+a                    : 35
+b                    : 36
+c                    : 37
+d                    : 38
+e                    : 39
+error                : 
+f                    : 40
+g                    : 41
+h                    : 42
+i                    : 43
+j                    : 44
+k                    : 45
+l                    : 46
+m                    : 47
+n                    : 48
+o                    : 49
+p                    : 50
+q                    : 51
+r                    : 52
+s                    : 53
+t                    : 54
+u                    : 55
+v                    : 56
+w                    : 58
+x                    : 57
+y                    : 59
+z                    : 60
+
+Nonterminals, with rules where they appear
+
+empty                : 2
+expressao            : 0
+frase                : 1 3
+lowerCase            : 6 8
+palavra              : 3 4 5 6
+upperCase            : 5 7
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . expressao
+    (1) expressao -> . frase
+    (2) expressao -> . empty
+    (3) frase -> . palavra SPACE frase
+    (4) frase -> . palavra
+    (61) empty -> .
+    (5) palavra -> . upperCase palavra
+    (6) palavra -> . lowerCase palavra
+    (7) palavra -> . upperCase
+    (8) palavra -> . lowerCase
+    (9) upperCase -> . A
+    (10) upperCase -> . B
+    (11) upperCase -> . C
+    (12) upperCase -> . D
+    (13) upperCase -> . E
+    (14) upperCase -> . F
+    (15) upperCase -> . G
+    (16) upperCase -> . H
+    (17) upperCase -> . I
+    (18) upperCase -> . J
+    (19) upperCase -> . K
+    (20) upperCase -> . L
+    (21) upperCase -> . M
+    (22) upperCase -> . N
+    (23) upperCase -> . O
+    (24) upperCase -> . P
+    (25) upperCase -> . Q
+    (26) upperCase -> . R
+    (27) upperCase -> . S
+    (28) upperCase -> . T
+    (29) upperCase -> . U
+    (30) upperCase -> . V
+    (31) upperCase -> . X
+    (32) upperCase -> . W
+    (33) upperCase -> . Y
+    (34) upperCase -> . Z
+    (35) lowerCase -> . a
+    (36) lowerCase -> . b
+    (37) lowerCase -> . c
+    (38) lowerCase -> . d
+    (39) lowerCase -> . e
+    (40) lowerCase -> . f
+    (41) lowerCase -> . g
+    (42) lowerCase -> . h
+    (43) lowerCase -> . i
+    (44) lowerCase -> . j
+    (45) lowerCase -> . k
+    (46) lowerCase -> . l
+    (47) lowerCase -> . m
+    (48) lowerCase -> . n
+    (49) lowerCase -> . o
+    (50) lowerCase -> . p
+    (51) lowerCase -> . q
+    (52) lowerCase -> . r
+    (53) lowerCase -> . s
+    (54) lowerCase -> . t
+    (55) lowerCase -> . u
+    (56) lowerCase -> . v
+    (57) lowerCase -> . x
+    (58) lowerCase -> . w
+    (59) lowerCase -> . y
+    (60) lowerCase -> . z
+
+    $end            reduce using rule 61 (empty -> .)
+    A               shift and go to state 7
+    B               shift and go to state 8
+    C               shift and go to state 9
+    D               shift and go to state 10
+    E               shift and go to state 11
+    F               shift and go to state 12
+    G               shift and go to state 13
+    H               shift and go to state 14
+    I               shift and go to state 15
+    J               shift and go to state 16
+    K               shift and go to state 17
+    L               shift and go to state 18
+    M               shift and go to state 19
+    N               shift and go to state 20
+    O               shift and go to state 21
+    P               shift and go to state 22
+    Q               shift and go to state 23
+    R               shift and go to state 24
+    S               shift and go to state 25
+    T               shift and go to state 26
+    U               shift and go to state 27
+    V               shift and go to state 28
+    X               shift and go to state 29
+    W               shift and go to state 30
+    Y               shift and go to state 31
+    Z               shift and go to state 32
+    a               shift and go to state 33
+    b               shift and go to state 34
+    c               shift and go to state 35
+    d               shift and go to state 36
+    e               shift and go to state 37
+    f               shift and go to state 38
+    g               shift and go to state 39
+    h               shift and go to state 40
+    i               shift and go to state 41
+    j               shift and go to state 42
+    k               shift and go to state 43
+    l               shift and go to state 44
+    m               shift and go to state 45
+    n               shift and go to state 46
+    o               shift and go to state 47
+    p               shift and go to state 48
+    q               shift and go to state 49
+    r               shift and go to state 50
+    s               shift and go to state 51
+    t               shift and go to state 52
+    u               shift and go to state 53
+    v               shift and go to state 54
+    x               shift and go to state 55
+    w               shift and go to state 56
+    y               shift and go to state 57
+    z               shift and go to state 58
+
+    expressao                      shift and go to state 1
+    frase                          shift and go to state 2
+    empty                          shift and go to state 3
+    palavra                        shift and go to state 4
+    upperCase                      shift and go to state 5
+    lowerCase                      shift and go to state 6
+
+state 1
+
+    (0) S' -> expressao .
+
+
+
+state 2
+
+    (1) expressao -> frase .
+
+    $end            reduce using rule 1 (expressao -> frase .)
+
+
+state 3
+
+    (2) expressao -> empty .
+
+    $end            reduce using rule 2 (expressao -> empty .)
+
+
+state 4
+
+    (3) frase -> palavra . SPACE frase
+    (4) frase -> palavra .
+
+    SPACE           shift and go to state 59
+    $end            reduce using rule 4 (frase -> palavra .)
+
+
+state 5
+
+    (5) palavra -> upperCase . palavra
+    (7) palavra -> upperCase .
+    (5) palavra -> . upperCase palavra
+    (6) palavra -> . lowerCase palavra
+    (7) palavra -> . upperCase
+    (8) palavra -> . lowerCase
+    (9) upperCase -> . A
+    (10) upperCase -> . B
+    (11) upperCase -> . C
+    (12) upperCase -> . D
+    (13) upperCase -> . E
+    (14) upperCase -> . F
+    (15) upperCase -> . G
+    (16) upperCase -> . H
+    (17) upperCase -> . I
+    (18) upperCase -> . J
+    (19) upperCase -> . K
+    (20) upperCase -> . L
+    (21) upperCase -> . M
+    (22) upperCase -> . N
+    (23) upperCase -> . O
+    (24) upperCase -> . P
+    (25) upperCase -> . Q
+    (26) upperCase -> . R
+    (27) upperCase -> . S
+    (28) upperCase -> . T
+    (29) upperCase -> . U
+    (30) upperCase -> . V
+    (31) upperCase -> . X
+    (32) upperCase -> . W
+    (33) upperCase -> . Y
+    (34) upperCase -> . Z
+    (35) lowerCase -> . a
+    (36) lowerCase -> . b
+    (37) lowerCase -> . c
+    (38) lowerCase -> . d
+    (39) lowerCase -> . e
+    (40) lowerCase -> . f
+    (41) lowerCase -> . g
+    (42) lowerCase -> . h
+    (43) lowerCase -> . i
+    (44) lowerCase -> . j
+    (45) lowerCase -> . k
+    (46) lowerCase -> . l
+    (47) lowerCase -> . m
+    (48) lowerCase -> . n
+    (49) lowerCase -> . o
+    (50) lowerCase -> . p
+    (51) lowerCase -> . q
+    (52) lowerCase -> . r
+    (53) lowerCase -> . s
+    (54) lowerCase -> . t
+    (55) lowerCase -> . u
+    (56) lowerCase -> . v
+    (57) lowerCase -> . x
+    (58) lowerCase -> . w
+    (59) lowerCase -> . y
+    (60) lowerCase -> . z
+
+    SPACE           reduce using rule 7 (palavra -> upperCase .)
+    $end            reduce using rule 7 (palavra -> upperCase .)
+    A               shift and go to state 7
+    B               shift and go to state 8
+    C               shift and go to state 9
+    D               shift and go to state 10
+    E               shift and go to state 11
+    F               shift and go to state 12
+    G               shift and go to state 13
+    H               shift and go to state 14
+    I               shift and go to state 15
+    J               shift and go to state 16
+    K               shift and go to state 17
+    L               shift and go to state 18
+    M               shift and go to state 19
+    N               shift and go to state 20
+    O               shift and go to state 21
+    P               shift and go to state 22
+    Q               shift and go to state 23
+    R               shift and go to state 24
+    S               shift and go to state 25
+    T               shift and go to state 26
+    U               shift and go to state 27
+    V               shift and go to state 28
+    X               shift and go to state 29
+    W               shift and go to state 30
+    Y               shift and go to state 31
+    Z               shift and go to state 32
+    a               shift and go to state 33
+    b               shift and go to state 34
+    c               shift and go to state 35
+    d               shift and go to state 36
+    e               shift and go to state 37
+    f               shift and go to state 38
+    g               shift and go to state 39
+    h               shift and go to state 40
+    i               shift and go to state 41
+    j               shift and go to state 42
+    k               shift and go to state 43
+    l               shift and go to state 44
+    m               shift and go to state 45
+    n               shift and go to state 46
+    o               shift and go to state 47
+    p               shift and go to state 48
+    q               shift and go to state 49
+    r               shift and go to state 50
+    s               shift and go to state 51
+    t               shift and go to state 52
+    u               shift and go to state 53
+    v               shift and go to state 54
+    x               shift and go to state 55
+    w               shift and go to state 56
+    y               shift and go to state 57
+    z               shift and go to state 58
+
+    upperCase                      shift and go to state 5
+    palavra                        shift and go to state 60
+    lowerCase                      shift and go to state 6
+
+state 6
+
+    (6) palavra -> lowerCase . palavra
+    (8) palavra -> lowerCase .
+    (5) palavra -> . upperCase palavra
+    (6) palavra -> . lowerCase palavra
+    (7) palavra -> . upperCase
+    (8) palavra -> . lowerCase
+    (9) upperCase -> . A
+    (10) upperCase -> . B
+    (11) upperCase -> . C
+    (12) upperCase -> . D
+    (13) upperCase -> . E
+    (14) upperCase -> . F
+    (15) upperCase -> . G
+    (16) upperCase -> . H
+    (17) upperCase -> . I
+    (18) upperCase -> . J
+    (19) upperCase -> . K
+    (20) upperCase -> . L
+    (21) upperCase -> . M
+    (22) upperCase -> . N
+    (23) upperCase -> . O
+    (24) upperCase -> . P
+    (25) upperCase -> . Q
+    (26) upperCase -> . R
+    (27) upperCase -> . S
+    (28) upperCase -> . T
+    (29) upperCase -> . U
+    (30) upperCase -> . V
+    (31) upperCase -> . X
+    (32) upperCase -> . W
+    (33) upperCase -> . Y
+    (34) upperCase -> . Z
+    (35) lowerCase -> . a
+    (36) lowerCase -> . b
+    (37) lowerCase -> . c
+    (38) lowerCase -> . d
+    (39) lowerCase -> . e
+    (40) lowerCase -> . f
+    (41) lowerCase -> . g
+    (42) lowerCase -> . h
+    (43) lowerCase -> . i
+    (44) lowerCase -> . j
+    (45) lowerCase -> . k
+    (46) lowerCase -> . l
+    (47) lowerCase -> . m
+    (48) lowerCase -> . n
+    (49) lowerCase -> . o
+    (50) lowerCase -> . p
+    (51) lowerCase -> . q
+    (52) lowerCase -> . r
+    (53) lowerCase -> . s
+    (54) lowerCase -> . t
+    (55) lowerCase -> . u
+    (56) lowerCase -> . v
+    (57) lowerCase -> . x
+    (58) lowerCase -> . w
+    (59) lowerCase -> . y
+    (60) lowerCase -> . z
+
+    SPACE           reduce using rule 8 (palavra -> lowerCase .)
+    $end            reduce using rule 8 (palavra -> lowerCase .)
+    A               shift and go to state 7
+    B               shift and go to state 8
+    C               shift and go to state 9
+    D               shift and go to state 10
+    E               shift and go to state 11
+    F               shift and go to state 12
+    G               shift and go to state 13
+    H               shift and go to state 14
+    I               shift and go to state 15
+    J               shift and go to state 16
+    K               shift and go to state 17
+    L               shift and go to state 18
+    M               shift and go to state 19
+    N               shift and go to state 20
+    O               shift and go to state 21
+    P               shift and go to state 22
+    Q               shift and go to state 23
+    R               shift and go to state 24
+    S               shift and go to state 25
+    T               shift and go to state 26
+    U               shift and go to state 27
+    V               shift and go to state 28
+    X               shift and go to state 29
+    W               shift and go to state 30
+    Y               shift and go to state 31
+    Z               shift and go to state 32
+    a               shift and go to state 33
+    b               shift and go to state 34
+    c               shift and go to state 35
+    d               shift and go to state 36
+    e               shift and go to state 37
+    f               shift and go to state 38
+    g               shift and go to state 39
+    h               shift and go to state 40
+    i               shift and go to state 41
+    j               shift and go to state 42
+    k               shift and go to state 43
+    l               shift and go to state 44
+    m               shift and go to state 45
+    n               shift and go to state 46
+    o               shift and go to state 47
+    p               shift and go to state 48
+    q               shift and go to state 49
+    r               shift and go to state 50
+    s               shift and go to state 51
+    t               shift and go to state 52
+    u               shift and go to state 53
+    v               shift and go to state 54
+    x               shift and go to state 55
+    w               shift and go to state 56
+    y               shift and go to state 57
+    z               shift and go to state 58
+
+    lowerCase                      shift and go to state 6
+    palavra                        shift and go to state 61
+    upperCase                      shift and go to state 5
+
+state 7
+
+    (9) upperCase -> A .
+
+    A               reduce using rule 9 (upperCase -> A .)
+    B               reduce using rule 9 (upperCase -> A .)
+    C               reduce using rule 9 (upperCase -> A .)
+    D               reduce using rule 9 (upperCase -> A .)
+    E               reduce using rule 9 (upperCase -> A .)
+    F               reduce using rule 9 (upperCase -> A .)
+    G               reduce using rule 9 (upperCase -> A .)
+    H               reduce using rule 9 (upperCase -> A .)
+    I               reduce using rule 9 (upperCase -> A .)
+    J               reduce using rule 9 (upperCase -> A .)
+    K               reduce using rule 9 (upperCase -> A .)
+    L               reduce using rule 9 (upperCase -> A .)
+    M               reduce using rule 9 (upperCase -> A .)
+    N               reduce using rule 9 (upperCase -> A .)
+    O               reduce using rule 9 (upperCase -> A .)
+    P               reduce using rule 9 (upperCase -> A .)
+    Q               reduce using rule 9 (upperCase -> A .)
+    R               reduce using rule 9 (upperCase -> A .)
+    S               reduce using rule 9 (upperCase -> A .)
+    T               reduce using rule 9 (upperCase -> A .)
+    U               reduce using rule 9 (upperCase -> A .)
+    V               reduce using rule 9 (upperCase -> A .)
+    X               reduce using rule 9 (upperCase -> A .)
+    W               reduce using rule 9 (upperCase -> A .)
+    Y               reduce using rule 9 (upperCase -> A .)
+    Z               reduce using rule 9 (upperCase -> A .)
+    a               reduce using rule 9 (upperCase -> A .)
+    b               reduce using rule 9 (upperCase -> A .)
+    c               reduce using rule 9 (upperCase -> A .)
+    d               reduce using rule 9 (upperCase -> A .)
+    e               reduce using rule 9 (upperCase -> A .)
+    f               reduce using rule 9 (upperCase -> A .)
+    g               reduce using rule 9 (upperCase -> A .)
+    h               reduce using rule 9 (upperCase -> A .)
+    i               reduce using rule 9 (upperCase -> A .)
+    j               reduce using rule 9 (upperCase -> A .)
+    k               reduce using rule 9 (upperCase -> A .)
+    l               reduce using rule 9 (upperCase -> A .)
+    m               reduce using rule 9 (upperCase -> A .)
+    n               reduce using rule 9 (upperCase -> A .)
+    o               reduce using rule 9 (upperCase -> A .)
+    p               reduce using rule 9 (upperCase -> A .)
+    q               reduce using rule 9 (upperCase -> A .)
+    r               reduce using rule 9 (upperCase -> A .)
+    s               reduce using rule 9 (upperCase -> A .)
+    t               reduce using rule 9 (upperCase -> A .)
+    u               reduce using rule 9 (upperCase -> A .)
+    v               reduce using rule 9 (upperCase -> A .)
+    x               reduce using rule 9 (upperCase -> A .)
+    w               reduce using rule 9 (upperCase -> A .)
+    y               reduce using rule 9 (upperCase -> A .)
+    z               reduce using rule 9 (upperCase -> A .)
+    SPACE           reduce using rule 9 (upperCase -> A .)
+    $end            reduce using rule 9 (upperCase -> A .)
+
+
+state 8
+
+    (10) upperCase -> B .
+
+    A               reduce using rule 10 (upperCase -> B .)
+    B               reduce using rule 10 (upperCase -> B .)
+    C               reduce using rule 10 (upperCase -> B .)
+    D               reduce using rule 10 (upperCase -> B .)
+    E               reduce using rule 10 (upperCase -> B .)
+    F               reduce using rule 10 (upperCase -> B .)
+    G               reduce using rule 10 (upperCase -> B .)
+    H               reduce using rule 10 (upperCase -> B .)
+    I               reduce using rule 10 (upperCase -> B .)
+    J               reduce using rule 10 (upperCase -> B .)
+    K               reduce using rule 10 (upperCase -> B .)
+    L               reduce using rule 10 (upperCase -> B .)
+    M               reduce using rule 10 (upperCase -> B .)
+    N               reduce using rule 10 (upperCase -> B .)
+    O               reduce using rule 10 (upperCase -> B .)
+    P               reduce using rule 10 (upperCase -> B .)
+    Q               reduce using rule 10 (upperCase -> B .)
+    R               reduce using rule 10 (upperCase -> B .)
+    S               reduce using rule 10 (upperCase -> B .)
+    T               reduce using rule 10 (upperCase -> B .)
+    U               reduce using rule 10 (upperCase -> B .)
+    V               reduce using rule 10 (upperCase -> B .)
+    X               reduce using rule 10 (upperCase -> B .)
+    W               reduce using rule 10 (upperCase -> B .)
+    Y               reduce using rule 10 (upperCase -> B .)
+    Z               reduce using rule 10 (upperCase -> B .)
+    a               reduce using rule 10 (upperCase -> B .)
+    b               reduce using rule 10 (upperCase -> B .)
+    c               reduce using rule 10 (upperCase -> B .)
+    d               reduce using rule 10 (upperCase -> B .)
+    e               reduce using rule 10 (upperCase -> B .)
+    f               reduce using rule 10 (upperCase -> B .)
+    g               reduce using rule 10 (upperCase -> B .)
+    h               reduce using rule 10 (upperCase -> B .)
+    i               reduce using rule 10 (upperCase -> B .)
+    j               reduce using rule 10 (upperCase -> B .)
+    k               reduce using rule 10 (upperCase -> B .)
+    l               reduce using rule 10 (upperCase -> B .)
+    m               reduce using rule 10 (upperCase -> B .)
+    n               reduce using rule 10 (upperCase -> B .)
+    o               reduce using rule 10 (upperCase -> B .)
+    p               reduce using rule 10 (upperCase -> B .)
+    q               reduce using rule 10 (upperCase -> B .)
+    r               reduce using rule 10 (upperCase -> B .)
+    s               reduce using rule 10 (upperCase -> B .)
+    t               reduce using rule 10 (upperCase -> B .)
+    u               reduce using rule 10 (upperCase -> B .)
+    v               reduce using rule 10 (upperCase -> B .)
+    x               reduce using rule 10 (upperCase -> B .)
+    w               reduce using rule 10 (upperCase -> B .)
+    y               reduce using rule 10 (upperCase -> B .)
+    z               reduce using rule 10 (upperCase -> B .)
+    SPACE           reduce using rule 10 (upperCase -> B .)
+    $end            reduce using rule 10 (upperCase -> B .)
+
+
+state 9
+
+    (11) upperCase -> C .
+
+    A               reduce using rule 11 (upperCase -> C .)
+    B               reduce using rule 11 (upperCase -> C .)
+    C               reduce using rule 11 (upperCase -> C .)
+    D               reduce using rule 11 (upperCase -> C .)
+    E               reduce using rule 11 (upperCase -> C .)
+    F               reduce using rule 11 (upperCase -> C .)
+    G               reduce using rule 11 (upperCase -> C .)
+    H               reduce using rule 11 (upperCase -> C .)
+    I               reduce using rule 11 (upperCase -> C .)
+    J               reduce using rule 11 (upperCase -> C .)
+    K               reduce using rule 11 (upperCase -> C .)
+    L               reduce using rule 11 (upperCase -> C .)
+    M               reduce using rule 11 (upperCase -> C .)
+    N               reduce using rule 11 (upperCase -> C .)
+    O               reduce using rule 11 (upperCase -> C .)
+    P               reduce using rule 11 (upperCase -> C .)
+    Q               reduce using rule 11 (upperCase -> C .)
+    R               reduce using rule 11 (upperCase -> C .)
+    S               reduce using rule 11 (upperCase -> C .)
+    T               reduce using rule 11 (upperCase -> C .)
+    U               reduce using rule 11 (upperCase -> C .)
+    V               reduce using rule 11 (upperCase -> C .)
+    X               reduce using rule 11 (upperCase -> C .)
+    W               reduce using rule 11 (upperCase -> C .)
+    Y               reduce using rule 11 (upperCase -> C .)
+    Z               reduce using rule 11 (upperCase -> C .)
+    a               reduce using rule 11 (upperCase -> C .)
+    b               reduce using rule 11 (upperCase -> C .)
+    c               reduce using rule 11 (upperCase -> C .)
+    d               reduce using rule 11 (upperCase -> C .)
+    e               reduce using rule 11 (upperCase -> C .)
+    f               reduce using rule 11 (upperCase -> C .)
+    g               reduce using rule 11 (upperCase -> C .)
+    h               reduce using rule 11 (upperCase -> C .)
+    i               reduce using rule 11 (upperCase -> C .)
+    j               reduce using rule 11 (upperCase -> C .)
+    k               reduce using rule 11 (upperCase -> C .)
+    l               reduce using rule 11 (upperCase -> C .)
+    m               reduce using rule 11 (upperCase -> C .)
+    n               reduce using rule 11 (upperCase -> C .)
+    o               reduce using rule 11 (upperCase -> C .)
+    p               reduce using rule 11 (upperCase -> C .)
+    q               reduce using rule 11 (upperCase -> C .)
+    r               reduce using rule 11 (upperCase -> C .)
+    s               reduce using rule 11 (upperCase -> C .)
+    t               reduce using rule 11 (upperCase -> C .)
+    u               reduce using rule 11 (upperCase -> C .)
+    v               reduce using rule 11 (upperCase -> C .)
+    x               reduce using rule 11 (upperCase -> C .)
+    w               reduce using rule 11 (upperCase -> C .)
+    y               reduce using rule 11 (upperCase -> C .)
+    z               reduce using rule 11 (upperCase -> C .)
+    SPACE           reduce using rule 11 (upperCase -> C .)
+    $end            reduce using rule 11 (upperCase -> C .)
+
+
+state 10
+
+    (12) upperCase -> D .
+
+    A               reduce using rule 12 (upperCase -> D .)
+    B               reduce using rule 12 (upperCase -> D .)
+    C               reduce using rule 12 (upperCase -> D .)
+    D               reduce using rule 12 (upperCase -> D .)
+    E               reduce using rule 12 (upperCase -> D .)
+    F               reduce using rule 12 (upperCase -> D .)
+    G               reduce using rule 12 (upperCase -> D .)
+    H               reduce using rule 12 (upperCase -> D .)
+    I               reduce using rule 12 (upperCase -> D .)
+    J               reduce using rule 12 (upperCase -> D .)
+    K               reduce using rule 12 (upperCase -> D .)
+    L               reduce using rule 12 (upperCase -> D .)
+    M               reduce using rule 12 (upperCase -> D .)
+    N               reduce using rule 12 (upperCase -> D .)
+    O               reduce using rule 12 (upperCase -> D .)
+    P               reduce using rule 12 (upperCase -> D .)
+    Q               reduce using rule 12 (upperCase -> D .)
+    R               reduce using rule 12 (upperCase -> D .)
+    S               reduce using rule 12 (upperCase -> D .)
+    T               reduce using rule 12 (upperCase -> D .)
+    U               reduce using rule 12 (upperCase -> D .)
+    V               reduce using rule 12 (upperCase -> D .)
+    X               reduce using rule 12 (upperCase -> D .)
+    W               reduce using rule 12 (upperCase -> D .)
+    Y               reduce using rule 12 (upperCase -> D .)
+    Z               reduce using rule 12 (upperCase -> D .)
+    a               reduce using rule 12 (upperCase -> D .)
+    b               reduce using rule 12 (upperCase -> D .)
+    c               reduce using rule 12 (upperCase -> D .)
+    d               reduce using rule 12 (upperCase -> D .)
+    e               reduce using rule 12 (upperCase -> D .)
+    f               reduce using rule 12 (upperCase -> D .)
+    g               reduce using rule 12 (upperCase -> D .)
+    h               reduce using rule 12 (upperCase -> D .)
+    i               reduce using rule 12 (upperCase -> D .)
+    j               reduce using rule 12 (upperCase -> D .)
+    k               reduce using rule 12 (upperCase -> D .)
+    l               reduce using rule 12 (upperCase -> D .)
+    m               reduce using rule 12 (upperCase -> D .)
+    n               reduce using rule 12 (upperCase -> D .)
+    o               reduce using rule 12 (upperCase -> D .)
+    p               reduce using rule 12 (upperCase -> D .)
+    q               reduce using rule 12 (upperCase -> D .)
+    r               reduce using rule 12 (upperCase -> D .)
+    s               reduce using rule 12 (upperCase -> D .)
+    t               reduce using rule 12 (upperCase -> D .)
+    u               reduce using rule 12 (upperCase -> D .)
+    v               reduce using rule 12 (upperCase -> D .)
+    x               reduce using rule 12 (upperCase -> D .)
+    w               reduce using rule 12 (upperCase -> D .)
+    y               reduce using rule 12 (upperCase -> D .)
+    z               reduce using rule 12 (upperCase -> D .)
+    SPACE           reduce using rule 12 (upperCase -> D .)
+    $end            reduce using rule 12 (upperCase -> D .)
+
+
+state 11
+
+    (13) upperCase -> E .
+
+    A               reduce using rule 13 (upperCase -> E .)
+    B               reduce using rule 13 (upperCase -> E .)
+    C               reduce using rule 13 (upperCase -> E .)
+    D               reduce using rule 13 (upperCase -> E .)
+    E               reduce using rule 13 (upperCase -> E .)
+    F               reduce using rule 13 (upperCase -> E .)
+    G               reduce using rule 13 (upperCase -> E .)
+    H               reduce using rule 13 (upperCase -> E .)
+    I               reduce using rule 13 (upperCase -> E .)
+    J               reduce using rule 13 (upperCase -> E .)
+    K               reduce using rule 13 (upperCase -> E .)
+    L               reduce using rule 13 (upperCase -> E .)
+    M               reduce using rule 13 (upperCase -> E .)
+    N               reduce using rule 13 (upperCase -> E .)
+    O               reduce using rule 13 (upperCase -> E .)
+    P               reduce using rule 13 (upperCase -> E .)
+    Q               reduce using rule 13 (upperCase -> E .)
+    R               reduce using rule 13 (upperCase -> E .)
+    S               reduce using rule 13 (upperCase -> E .)
+    T               reduce using rule 13 (upperCase -> E .)
+    U               reduce using rule 13 (upperCase -> E .)
+    V               reduce using rule 13 (upperCase -> E .)
+    X               reduce using rule 13 (upperCase -> E .)
+    W               reduce using rule 13 (upperCase -> E .)
+    Y               reduce using rule 13 (upperCase -> E .)
+    Z               reduce using rule 13 (upperCase -> E .)
+    a               reduce using rule 13 (upperCase -> E .)
+    b               reduce using rule 13 (upperCase -> E .)
+    c               reduce using rule 13 (upperCase -> E .)
+    d               reduce using rule 13 (upperCase -> E .)
+    e               reduce using rule 13 (upperCase -> E .)
+    f               reduce using rule 13 (upperCase -> E .)
+    g               reduce using rule 13 (upperCase -> E .)
+    h               reduce using rule 13 (upperCase -> E .)
+    i               reduce using rule 13 (upperCase -> E .)
+    j               reduce using rule 13 (upperCase -> E .)
+    k               reduce using rule 13 (upperCase -> E .)
+    l               reduce using rule 13 (upperCase -> E .)
+    m               reduce using rule 13 (upperCase -> E .)
+    n               reduce using rule 13 (upperCase -> E .)
+    o               reduce using rule 13 (upperCase -> E .)
+    p               reduce using rule 13 (upperCase -> E .)
+    q               reduce using rule 13 (upperCase -> E .)
+    r               reduce using rule 13 (upperCase -> E .)
+    s               reduce using rule 13 (upperCase -> E .)
+    t               reduce using rule 13 (upperCase -> E .)
+    u               reduce using rule 13 (upperCase -> E .)
+    v               reduce using rule 13 (upperCase -> E .)
+    x               reduce using rule 13 (upperCase -> E .)
+    w               reduce using rule 13 (upperCase -> E .)
+    y               reduce using rule 13 (upperCase -> E .)
+    z               reduce using rule 13 (upperCase -> E .)
+    SPACE           reduce using rule 13 (upperCase -> E .)
+    $end            reduce using rule 13 (upperCase -> E .)
+
+
+state 12
+
+    (14) upperCase -> F .
+
+    A               reduce using rule 14 (upperCase -> F .)
+    B               reduce using rule 14 (upperCase -> F .)
+    C               reduce using rule 14 (upperCase -> F .)
+    D               reduce using rule 14 (upperCase -> F .)
+    E               reduce using rule 14 (upperCase -> F .)
+    F               reduce using rule 14 (upperCase -> F .)
+    G               reduce using rule 14 (upperCase -> F .)
+    H               reduce using rule 14 (upperCase -> F .)
+    I               reduce using rule 14 (upperCase -> F .)
+    J               reduce using rule 14 (upperCase -> F .)
+    K               reduce using rule 14 (upperCase -> F .)
+    L               reduce using rule 14 (upperCase -> F .)
+    M               reduce using rule 14 (upperCase -> F .)
+    N               reduce using rule 14 (upperCase -> F .)
+    O               reduce using rule 14 (upperCase -> F .)
+    P               reduce using rule 14 (upperCase -> F .)
+    Q               reduce using rule 14 (upperCase -> F .)
+    R               reduce using rule 14 (upperCase -> F .)
+    S               reduce using rule 14 (upperCase -> F .)
+    T               reduce using rule 14 (upperCase -> F .)
+    U               reduce using rule 14 (upperCase -> F .)
+    V               reduce using rule 14 (upperCase -> F .)
+    X               reduce using rule 14 (upperCase -> F .)
+    W               reduce using rule 14 (upperCase -> F .)
+    Y               reduce using rule 14 (upperCase -> F .)
+    Z               reduce using rule 14 (upperCase -> F .)
+    a               reduce using rule 14 (upperCase -> F .)
+    b               reduce using rule 14 (upperCase -> F .)
+    c               reduce using rule 14 (upperCase -> F .)
+    d               reduce using rule 14 (upperCase -> F .)
+    e               reduce using rule 14 (upperCase -> F .)
+    f               reduce using rule 14 (upperCase -> F .)
+    g               reduce using rule 14 (upperCase -> F .)
+    h               reduce using rule 14 (upperCase -> F .)
+    i               reduce using rule 14 (upperCase -> F .)
+    j               reduce using rule 14 (upperCase -> F .)
+    k               reduce using rule 14 (upperCase -> F .)
+    l               reduce using rule 14 (upperCase -> F .)
+    m               reduce using rule 14 (upperCase -> F .)
+    n               reduce using rule 14 (upperCase -> F .)
+    o               reduce using rule 14 (upperCase -> F .)
+    p               reduce using rule 14 (upperCase -> F .)
+    q               reduce using rule 14 (upperCase -> F .)
+    r               reduce using rule 14 (upperCase -> F .)
+    s               reduce using rule 14 (upperCase -> F .)
+    t               reduce using rule 14 (upperCase -> F .)
+    u               reduce using rule 14 (upperCase -> F .)
+    v               reduce using rule 14 (upperCase -> F .)
+    x               reduce using rule 14 (upperCase -> F .)
+    w               reduce using rule 14 (upperCase -> F .)
+    y               reduce using rule 14 (upperCase -> F .)
+    z               reduce using rule 14 (upperCase -> F .)
+    SPACE           reduce using rule 14 (upperCase -> F .)
+    $end            reduce using rule 14 (upperCase -> F .)
+
+
+state 13
+
+    (15) upperCase -> G .
+
+    A               reduce using rule 15 (upperCase -> G .)
+    B               reduce using rule 15 (upperCase -> G .)
+    C               reduce using rule 15 (upperCase -> G .)
+    D               reduce using rule 15 (upperCase -> G .)
+    E               reduce using rule 15 (upperCase -> G .)
+    F               reduce using rule 15 (upperCase -> G .)
+    G               reduce using rule 15 (upperCase -> G .)
+    H               reduce using rule 15 (upperCase -> G .)
+    I               reduce using rule 15 (upperCase -> G .)
+    J               reduce using rule 15 (upperCase -> G .)
+    K               reduce using rule 15 (upperCase -> G .)
+    L               reduce using rule 15 (upperCase -> G .)
+    M               reduce using rule 15 (upperCase -> G .)
+    N               reduce using rule 15 (upperCase -> G .)
+    O               reduce using rule 15 (upperCase -> G .)
+    P               reduce using rule 15 (upperCase -> G .)
+    Q               reduce using rule 15 (upperCase -> G .)
+    R               reduce using rule 15 (upperCase -> G .)
+    S               reduce using rule 15 (upperCase -> G .)
+    T               reduce using rule 15 (upperCase -> G .)
+    U               reduce using rule 15 (upperCase -> G .)
+    V               reduce using rule 15 (upperCase -> G .)
+    X               reduce using rule 15 (upperCase -> G .)
+    W               reduce using rule 15 (upperCase -> G .)
+    Y               reduce using rule 15 (upperCase -> G .)
+    Z               reduce using rule 15 (upperCase -> G .)
+    a               reduce using rule 15 (upperCase -> G .)
+    b               reduce using rule 15 (upperCase -> G .)
+    c               reduce using rule 15 (upperCase -> G .)
+    d               reduce using rule 15 (upperCase -> G .)
+    e               reduce using rule 15 (upperCase -> G .)
+    f               reduce using rule 15 (upperCase -> G .)
+    g               reduce using rule 15 (upperCase -> G .)
+    h               reduce using rule 15 (upperCase -> G .)
+    i               reduce using rule 15 (upperCase -> G .)
+    j               reduce using rule 15 (upperCase -> G .)
+    k               reduce using rule 15 (upperCase -> G .)
+    l               reduce using rule 15 (upperCase -> G .)
+    m               reduce using rule 15 (upperCase -> G .)
+    n               reduce using rule 15 (upperCase -> G .)
+    o               reduce using rule 15 (upperCase -> G .)
+    p               reduce using rule 15 (upperCase -> G .)
+    q               reduce using rule 15 (upperCase -> G .)
+    r               reduce using rule 15 (upperCase -> G .)
+    s               reduce using rule 15 (upperCase -> G .)
+    t               reduce using rule 15 (upperCase -> G .)
+    u               reduce using rule 15 (upperCase -> G .)
+    v               reduce using rule 15 (upperCase -> G .)
+    x               reduce using rule 15 (upperCase -> G .)
+    w               reduce using rule 15 (upperCase -> G .)
+    y               reduce using rule 15 (upperCase -> G .)
+    z               reduce using rule 15 (upperCase -> G .)
+    SPACE           reduce using rule 15 (upperCase -> G .)
+    $end            reduce using rule 15 (upperCase -> G .)
+
+
+state 14
+
+    (16) upperCase -> H .
+
+    A               reduce using rule 16 (upperCase -> H .)
+    B               reduce using rule 16 (upperCase -> H .)
+    C               reduce using rule 16 (upperCase -> H .)
+    D               reduce using rule 16 (upperCase -> H .)
+    E               reduce using rule 16 (upperCase -> H .)
+    F               reduce using rule 16 (upperCase -> H .)
+    G               reduce using rule 16 (upperCase -> H .)
+    H               reduce using rule 16 (upperCase -> H .)
+    I               reduce using rule 16 (upperCase -> H .)
+    J               reduce using rule 16 (upperCase -> H .)
+    K               reduce using rule 16 (upperCase -> H .)
+    L               reduce using rule 16 (upperCase -> H .)
+    M               reduce using rule 16 (upperCase -> H .)
+    N               reduce using rule 16 (upperCase -> H .)
+    O               reduce using rule 16 (upperCase -> H .)
+    P               reduce using rule 16 (upperCase -> H .)
+    Q               reduce using rule 16 (upperCase -> H .)
+    R               reduce using rule 16 (upperCase -> H .)
+    S               reduce using rule 16 (upperCase -> H .)
+    T               reduce using rule 16 (upperCase -> H .)
+    U               reduce using rule 16 (upperCase -> H .)
+    V               reduce using rule 16 (upperCase -> H .)
+    X               reduce using rule 16 (upperCase -> H .)
+    W               reduce using rule 16 (upperCase -> H .)
+    Y               reduce using rule 16 (upperCase -> H .)
+    Z               reduce using rule 16 (upperCase -> H .)
+    a               reduce using rule 16 (upperCase -> H .)
+    b               reduce using rule 16 (upperCase -> H .)
+    c               reduce using rule 16 (upperCase -> H .)
+    d               reduce using rule 16 (upperCase -> H .)
+    e               reduce using rule 16 (upperCase -> H .)
+    f               reduce using rule 16 (upperCase -> H .)
+    g               reduce using rule 16 (upperCase -> H .)
+    h               reduce using rule 16 (upperCase -> H .)
+    i               reduce using rule 16 (upperCase -> H .)
+    j               reduce using rule 16 (upperCase -> H .)
+    k               reduce using rule 16 (upperCase -> H .)
+    l               reduce using rule 16 (upperCase -> H .)
+    m               reduce using rule 16 (upperCase -> H .)
+    n               reduce using rule 16 (upperCase -> H .)
+    o               reduce using rule 16 (upperCase -> H .)
+    p               reduce using rule 16 (upperCase -> H .)
+    q               reduce using rule 16 (upperCase -> H .)
+    r               reduce using rule 16 (upperCase -> H .)
+    s               reduce using rule 16 (upperCase -> H .)
+    t               reduce using rule 16 (upperCase -> H .)
+    u               reduce using rule 16 (upperCase -> H .)
+    v               reduce using rule 16 (upperCase -> H .)
+    x               reduce using rule 16 (upperCase -> H .)
+    w               reduce using rule 16 (upperCase -> H .)
+    y               reduce using rule 16 (upperCase -> H .)
+    z               reduce using rule 16 (upperCase -> H .)
+    SPACE           reduce using rule 16 (upperCase -> H .)
+    $end            reduce using rule 16 (upperCase -> H .)
+
+
+state 15
+
+    (17) upperCase -> I .
+
+    A               reduce using rule 17 (upperCase -> I .)
+    B               reduce using rule 17 (upperCase -> I .)
+    C               reduce using rule 17 (upperCase -> I .)
+    D               reduce using rule 17 (upperCase -> I .)
+    E               reduce using rule 17 (upperCase -> I .)
+    F               reduce using rule 17 (upperCase -> I .)
+    G               reduce using rule 17 (upperCase -> I .)
+    H               reduce using rule 17 (upperCase -> I .)
+    I               reduce using rule 17 (upperCase -> I .)
+    J               reduce using rule 17 (upperCase -> I .)
+    K               reduce using rule 17 (upperCase -> I .)
+    L               reduce using rule 17 (upperCase -> I .)
+    M               reduce using rule 17 (upperCase -> I .)
+    N               reduce using rule 17 (upperCase -> I .)
+    O               reduce using rule 17 (upperCase -> I .)
+    P               reduce using rule 17 (upperCase -> I .)
+    Q               reduce using rule 17 (upperCase -> I .)
+    R               reduce using rule 17 (upperCase -> I .)
+    S               reduce using rule 17 (upperCase -> I .)
+    T               reduce using rule 17 (upperCase -> I .)
+    U               reduce using rule 17 (upperCase -> I .)
+    V               reduce using rule 17 (upperCase -> I .)
+    X               reduce using rule 17 (upperCase -> I .)
+    W               reduce using rule 17 (upperCase -> I .)
+    Y               reduce using rule 17 (upperCase -> I .)
+    Z               reduce using rule 17 (upperCase -> I .)
+    a               reduce using rule 17 (upperCase -> I .)
+    b               reduce using rule 17 (upperCase -> I .)
+    c               reduce using rule 17 (upperCase -> I .)
+    d               reduce using rule 17 (upperCase -> I .)
+    e               reduce using rule 17 (upperCase -> I .)
+    f               reduce using rule 17 (upperCase -> I .)
+    g               reduce using rule 17 (upperCase -> I .)
+    h               reduce using rule 17 (upperCase -> I .)
+    i               reduce using rule 17 (upperCase -> I .)
+    j               reduce using rule 17 (upperCase -> I .)
+    k               reduce using rule 17 (upperCase -> I .)
+    l               reduce using rule 17 (upperCase -> I .)
+    m               reduce using rule 17 (upperCase -> I .)
+    n               reduce using rule 17 (upperCase -> I .)
+    o               reduce using rule 17 (upperCase -> I .)
+    p               reduce using rule 17 (upperCase -> I .)
+    q               reduce using rule 17 (upperCase -> I .)
+    r               reduce using rule 17 (upperCase -> I .)
+    s               reduce using rule 17 (upperCase -> I .)
+    t               reduce using rule 17 (upperCase -> I .)
+    u               reduce using rule 17 (upperCase -> I .)
+    v               reduce using rule 17 (upperCase -> I .)
+    x               reduce using rule 17 (upperCase -> I .)
+    w               reduce using rule 17 (upperCase -> I .)
+    y               reduce using rule 17 (upperCase -> I .)
+    z               reduce using rule 17 (upperCase -> I .)
+    SPACE           reduce using rule 17 (upperCase -> I .)
+    $end            reduce using rule 17 (upperCase -> I .)
+
+
+state 16
+
+    (18) upperCase -> J .
+
+    A               reduce using rule 18 (upperCase -> J .)
+    B               reduce using rule 18 (upperCase -> J .)
+    C               reduce using rule 18 (upperCase -> J .)
+    D               reduce using rule 18 (upperCase -> J .)
+    E               reduce using rule 18 (upperCase -> J .)
+    F               reduce using rule 18 (upperCase -> J .)
+    G               reduce using rule 18 (upperCase -> J .)
+    H               reduce using rule 18 (upperCase -> J .)
+    I               reduce using rule 18 (upperCase -> J .)
+    J               reduce using rule 18 (upperCase -> J .)
+    K               reduce using rule 18 (upperCase -> J .)
+    L               reduce using rule 18 (upperCase -> J .)
+    M               reduce using rule 18 (upperCase -> J .)
+    N               reduce using rule 18 (upperCase -> J .)
+    O               reduce using rule 18 (upperCase -> J .)
+    P               reduce using rule 18 (upperCase -> J .)
+    Q               reduce using rule 18 (upperCase -> J .)
+    R               reduce using rule 18 (upperCase -> J .)
+    S               reduce using rule 18 (upperCase -> J .)
+    T               reduce using rule 18 (upperCase -> J .)
+    U               reduce using rule 18 (upperCase -> J .)
+    V               reduce using rule 18 (upperCase -> J .)
+    X               reduce using rule 18 (upperCase -> J .)
+    W               reduce using rule 18 (upperCase -> J .)
+    Y               reduce using rule 18 (upperCase -> J .)
+    Z               reduce using rule 18 (upperCase -> J .)
+    a               reduce using rule 18 (upperCase -> J .)
+    b               reduce using rule 18 (upperCase -> J .)
+    c               reduce using rule 18 (upperCase -> J .)
+    d               reduce using rule 18 (upperCase -> J .)
+    e               reduce using rule 18 (upperCase -> J .)
+    f               reduce using rule 18 (upperCase -> J .)
+    g               reduce using rule 18 (upperCase -> J .)
+    h               reduce using rule 18 (upperCase -> J .)
+    i               reduce using rule 18 (upperCase -> J .)
+    j               reduce using rule 18 (upperCase -> J .)
+    k               reduce using rule 18 (upperCase -> J .)
+    l               reduce using rule 18 (upperCase -> J .)
+    m               reduce using rule 18 (upperCase -> J .)
+    n               reduce using rule 18 (upperCase -> J .)
+    o               reduce using rule 18 (upperCase -> J .)
+    p               reduce using rule 18 (upperCase -> J .)
+    q               reduce using rule 18 (upperCase -> J .)
+    r               reduce using rule 18 (upperCase -> J .)
+    s               reduce using rule 18 (upperCase -> J .)
+    t               reduce using rule 18 (upperCase -> J .)
+    u               reduce using rule 18 (upperCase -> J .)
+    v               reduce using rule 18 (upperCase -> J .)
+    x               reduce using rule 18 (upperCase -> J .)
+    w               reduce using rule 18 (upperCase -> J .)
+    y               reduce using rule 18 (upperCase -> J .)
+    z               reduce using rule 18 (upperCase -> J .)
+    SPACE           reduce using rule 18 (upperCase -> J .)
+    $end            reduce using rule 18 (upperCase -> J .)
+
+
+state 17
+
+    (19) upperCase -> K .
+
+    A               reduce using rule 19 (upperCase -> K .)
+    B               reduce using rule 19 (upperCase -> K .)
+    C               reduce using rule 19 (upperCase -> K .)
+    D               reduce using rule 19 (upperCase -> K .)
+    E               reduce using rule 19 (upperCase -> K .)
+    F               reduce using rule 19 (upperCase -> K .)
+    G               reduce using rule 19 (upperCase -> K .)
+    H               reduce using rule 19 (upperCase -> K .)
+    I               reduce using rule 19 (upperCase -> K .)
+    J               reduce using rule 19 (upperCase -> K .)
+    K               reduce using rule 19 (upperCase -> K .)
+    L               reduce using rule 19 (upperCase -> K .)
+    M               reduce using rule 19 (upperCase -> K .)
+    N               reduce using rule 19 (upperCase -> K .)
+    O               reduce using rule 19 (upperCase -> K .)
+    P               reduce using rule 19 (upperCase -> K .)
+    Q               reduce using rule 19 (upperCase -> K .)
+    R               reduce using rule 19 (upperCase -> K .)
+    S               reduce using rule 19 (upperCase -> K .)
+    T               reduce using rule 19 (upperCase -> K .)
+    U               reduce using rule 19 (upperCase -> K .)
+    V               reduce using rule 19 (upperCase -> K .)
+    X               reduce using rule 19 (upperCase -> K .)
+    W               reduce using rule 19 (upperCase -> K .)
+    Y               reduce using rule 19 (upperCase -> K .)
+    Z               reduce using rule 19 (upperCase -> K .)
+    a               reduce using rule 19 (upperCase -> K .)
+    b               reduce using rule 19 (upperCase -> K .)
+    c               reduce using rule 19 (upperCase -> K .)
+    d               reduce using rule 19 (upperCase -> K .)
+    e               reduce using rule 19 (upperCase -> K .)
+    f               reduce using rule 19 (upperCase -> K .)
+    g               reduce using rule 19 (upperCase -> K .)
+    h               reduce using rule 19 (upperCase -> K .)
+    i               reduce using rule 19 (upperCase -> K .)
+    j               reduce using rule 19 (upperCase -> K .)
+    k               reduce using rule 19 (upperCase -> K .)
+    l               reduce using rule 19 (upperCase -> K .)
+    m               reduce using rule 19 (upperCase -> K .)
+    n               reduce using rule 19 (upperCase -> K .)
+    o               reduce using rule 19 (upperCase -> K .)
+    p               reduce using rule 19 (upperCase -> K .)
+    q               reduce using rule 19 (upperCase -> K .)
+    r               reduce using rule 19 (upperCase -> K .)
+    s               reduce using rule 19 (upperCase -> K .)
+    t               reduce using rule 19 (upperCase -> K .)
+    u               reduce using rule 19 (upperCase -> K .)
+    v               reduce using rule 19 (upperCase -> K .)
+    x               reduce using rule 19 (upperCase -> K .)
+    w               reduce using rule 19 (upperCase -> K .)
+    y               reduce using rule 19 (upperCase -> K .)
+    z               reduce using rule 19 (upperCase -> K .)
+    SPACE           reduce using rule 19 (upperCase -> K .)
+    $end            reduce using rule 19 (upperCase -> K .)
+
+
+state 18
+
+    (20) upperCase -> L .
+
+    A               reduce using rule 20 (upperCase -> L .)
+    B               reduce using rule 20 (upperCase -> L .)
+    C               reduce using rule 20 (upperCase -> L .)
+    D               reduce using rule 20 (upperCase -> L .)
+    E               reduce using rule 20 (upperCase -> L .)
+    F               reduce using rule 20 (upperCase -> L .)
+    G               reduce using rule 20 (upperCase -> L .)
+    H               reduce using rule 20 (upperCase -> L .)
+    I               reduce using rule 20 (upperCase -> L .)
+    J               reduce using rule 20 (upperCase -> L .)
+    K               reduce using rule 20 (upperCase -> L .)
+    L               reduce using rule 20 (upperCase -> L .)
+    M               reduce using rule 20 (upperCase -> L .)
+    N               reduce using rule 20 (upperCase -> L .)
+    O               reduce using rule 20 (upperCase -> L .)
+    P               reduce using rule 20 (upperCase -> L .)
+    Q               reduce using rule 20 (upperCase -> L .)
+    R               reduce using rule 20 (upperCase -> L .)
+    S               reduce using rule 20 (upperCase -> L .)
+    T               reduce using rule 20 (upperCase -> L .)
+    U               reduce using rule 20 (upperCase -> L .)
+    V               reduce using rule 20 (upperCase -> L .)
+    X               reduce using rule 20 (upperCase -> L .)
+    W               reduce using rule 20 (upperCase -> L .)
+    Y               reduce using rule 20 (upperCase -> L .)
+    Z               reduce using rule 20 (upperCase -> L .)
+    a               reduce using rule 20 (upperCase -> L .)
+    b               reduce using rule 20 (upperCase -> L .)
+    c               reduce using rule 20 (upperCase -> L .)
+    d               reduce using rule 20 (upperCase -> L .)
+    e               reduce using rule 20 (upperCase -> L .)
+    f               reduce using rule 20 (upperCase -> L .)
+    g               reduce using rule 20 (upperCase -> L .)
+    h               reduce using rule 20 (upperCase -> L .)
+    i               reduce using rule 20 (upperCase -> L .)
+    j               reduce using rule 20 (upperCase -> L .)
+    k               reduce using rule 20 (upperCase -> L .)
+    l               reduce using rule 20 (upperCase -> L .)
+    m               reduce using rule 20 (upperCase -> L .)
+    n               reduce using rule 20 (upperCase -> L .)
+    o               reduce using rule 20 (upperCase -> L .)
+    p               reduce using rule 20 (upperCase -> L .)
+    q               reduce using rule 20 (upperCase -> L .)
+    r               reduce using rule 20 (upperCase -> L .)
+    s               reduce using rule 20 (upperCase -> L .)
+    t               reduce using rule 20 (upperCase -> L .)
+    u               reduce using rule 20 (upperCase -> L .)
+    v               reduce using rule 20 (upperCase -> L .)
+    x               reduce using rule 20 (upperCase -> L .)
+    w               reduce using rule 20 (upperCase -> L .)
+    y               reduce using rule 20 (upperCase -> L .)
+    z               reduce using rule 20 (upperCase -> L .)
+    SPACE           reduce using rule 20 (upperCase -> L .)
+    $end            reduce using rule 20 (upperCase -> L .)
+
+
+state 19
+
+    (21) upperCase -> M .
+
+    A               reduce using rule 21 (upperCase -> M .)
+    B               reduce using rule 21 (upperCase -> M .)
+    C               reduce using rule 21 (upperCase -> M .)
+    D               reduce using rule 21 (upperCase -> M .)
+    E               reduce using rule 21 (upperCase -> M .)
+    F               reduce using rule 21 (upperCase -> M .)
+    G               reduce using rule 21 (upperCase -> M .)
+    H               reduce using rule 21 (upperCase -> M .)
+    I               reduce using rule 21 (upperCase -> M .)
+    J               reduce using rule 21 (upperCase -> M .)
+    K               reduce using rule 21 (upperCase -> M .)
+    L               reduce using rule 21 (upperCase -> M .)
+    M               reduce using rule 21 (upperCase -> M .)
+    N               reduce using rule 21 (upperCase -> M .)
+    O               reduce using rule 21 (upperCase -> M .)
+    P               reduce using rule 21 (upperCase -> M .)
+    Q               reduce using rule 21 (upperCase -> M .)
+    R               reduce using rule 21 (upperCase -> M .)
+    S               reduce using rule 21 (upperCase -> M .)
+    T               reduce using rule 21 (upperCase -> M .)
+    U               reduce using rule 21 (upperCase -> M .)
+    V               reduce using rule 21 (upperCase -> M .)
+    X               reduce using rule 21 (upperCase -> M .)
+    W               reduce using rule 21 (upperCase -> M .)
+    Y               reduce using rule 21 (upperCase -> M .)
+    Z               reduce using rule 21 (upperCase -> M .)
+    a               reduce using rule 21 (upperCase -> M .)
+    b               reduce using rule 21 (upperCase -> M .)
+    c               reduce using rule 21 (upperCase -> M .)
+    d               reduce using rule 21 (upperCase -> M .)
+    e               reduce using rule 21 (upperCase -> M .)
+    f               reduce using rule 21 (upperCase -> M .)
+    g               reduce using rule 21 (upperCase -> M .)
+    h               reduce using rule 21 (upperCase -> M .)
+    i               reduce using rule 21 (upperCase -> M .)
+    j               reduce using rule 21 (upperCase -> M .)
+    k               reduce using rule 21 (upperCase -> M .)
+    l               reduce using rule 21 (upperCase -> M .)
+    m               reduce using rule 21 (upperCase -> M .)
+    n               reduce using rule 21 (upperCase -> M .)
+    o               reduce using rule 21 (upperCase -> M .)
+    p               reduce using rule 21 (upperCase -> M .)
+    q               reduce using rule 21 (upperCase -> M .)
+    r               reduce using rule 21 (upperCase -> M .)
+    s               reduce using rule 21 (upperCase -> M .)
+    t               reduce using rule 21 (upperCase -> M .)
+    u               reduce using rule 21 (upperCase -> M .)
+    v               reduce using rule 21 (upperCase -> M .)
+    x               reduce using rule 21 (upperCase -> M .)
+    w               reduce using rule 21 (upperCase -> M .)
+    y               reduce using rule 21 (upperCase -> M .)
+    z               reduce using rule 21 (upperCase -> M .)
+    SPACE           reduce using rule 21 (upperCase -> M .)
+    $end            reduce using rule 21 (upperCase -> M .)
+
+
+state 20
+
+    (22) upperCase -> N .
+
+    A               reduce using rule 22 (upperCase -> N .)
+    B               reduce using rule 22 (upperCase -> N .)
+    C               reduce using rule 22 (upperCase -> N .)
+    D               reduce using rule 22 (upperCase -> N .)
+    E               reduce using rule 22 (upperCase -> N .)
+    F               reduce using rule 22 (upperCase -> N .)
+    G               reduce using rule 22 (upperCase -> N .)
+    H               reduce using rule 22 (upperCase -> N .)
+    I               reduce using rule 22 (upperCase -> N .)
+    J               reduce using rule 22 (upperCase -> N .)
+    K               reduce using rule 22 (upperCase -> N .)
+    L               reduce using rule 22 (upperCase -> N .)
+    M               reduce using rule 22 (upperCase -> N .)
+    N               reduce using rule 22 (upperCase -> N .)
+    O               reduce using rule 22 (upperCase -> N .)
+    P               reduce using rule 22 (upperCase -> N .)
+    Q               reduce using rule 22 (upperCase -> N .)
+    R               reduce using rule 22 (upperCase -> N .)
+    S               reduce using rule 22 (upperCase -> N .)
+    T               reduce using rule 22 (upperCase -> N .)
+    U               reduce using rule 22 (upperCase -> N .)
+    V               reduce using rule 22 (upperCase -> N .)
+    X               reduce using rule 22 (upperCase -> N .)
+    W               reduce using rule 22 (upperCase -> N .)
+    Y               reduce using rule 22 (upperCase -> N .)
+    Z               reduce using rule 22 (upperCase -> N .)
+    a               reduce using rule 22 (upperCase -> N .)
+    b               reduce using rule 22 (upperCase -> N .)
+    c               reduce using rule 22 (upperCase -> N .)
+    d               reduce using rule 22 (upperCase -> N .)
+    e               reduce using rule 22 (upperCase -> N .)
+    f               reduce using rule 22 (upperCase -> N .)
+    g               reduce using rule 22 (upperCase -> N .)
+    h               reduce using rule 22 (upperCase -> N .)
+    i               reduce using rule 22 (upperCase -> N .)
+    j               reduce using rule 22 (upperCase -> N .)
+    k               reduce using rule 22 (upperCase -> N .)
+    l               reduce using rule 22 (upperCase -> N .)
+    m               reduce using rule 22 (upperCase -> N .)
+    n               reduce using rule 22 (upperCase -> N .)
+    o               reduce using rule 22 (upperCase -> N .)
+    p               reduce using rule 22 (upperCase -> N .)
+    q               reduce using rule 22 (upperCase -> N .)
+    r               reduce using rule 22 (upperCase -> N .)
+    s               reduce using rule 22 (upperCase -> N .)
+    t               reduce using rule 22 (upperCase -> N .)
+    u               reduce using rule 22 (upperCase -> N .)
+    v               reduce using rule 22 (upperCase -> N .)
+    x               reduce using rule 22 (upperCase -> N .)
+    w               reduce using rule 22 (upperCase -> N .)
+    y               reduce using rule 22 (upperCase -> N .)
+    z               reduce using rule 22 (upperCase -> N .)
+    SPACE           reduce using rule 22 (upperCase -> N .)
+    $end            reduce using rule 22 (upperCase -> N .)
+
+
+state 21
+
+    (23) upperCase -> O .
+
+    A               reduce using rule 23 (upperCase -> O .)
+    B               reduce using rule 23 (upperCase -> O .)
+    C               reduce using rule 23 (upperCase -> O .)
+    D               reduce using rule 23 (upperCase -> O .)
+    E               reduce using rule 23 (upperCase -> O .)
+    F               reduce using rule 23 (upperCase -> O .)
+    G               reduce using rule 23 (upperCase -> O .)
+    H               reduce using rule 23 (upperCase -> O .)
+    I               reduce using rule 23 (upperCase -> O .)
+    J               reduce using rule 23 (upperCase -> O .)
+    K               reduce using rule 23 (upperCase -> O .)
+    L               reduce using rule 23 (upperCase -> O .)
+    M               reduce using rule 23 (upperCase -> O .)
+    N               reduce using rule 23 (upperCase -> O .)
+    O               reduce using rule 23 (upperCase -> O .)
+    P               reduce using rule 23 (upperCase -> O .)
+    Q               reduce using rule 23 (upperCase -> O .)
+    R               reduce using rule 23 (upperCase -> O .)
+    S               reduce using rule 23 (upperCase -> O .)
+    T               reduce using rule 23 (upperCase -> O .)
+    U               reduce using rule 23 (upperCase -> O .)
+    V               reduce using rule 23 (upperCase -> O .)
+    X               reduce using rule 23 (upperCase -> O .)
+    W               reduce using rule 23 (upperCase -> O .)
+    Y               reduce using rule 23 (upperCase -> O .)
+    Z               reduce using rule 23 (upperCase -> O .)
+    a               reduce using rule 23 (upperCase -> O .)
+    b               reduce using rule 23 (upperCase -> O .)
+    c               reduce using rule 23 (upperCase -> O .)
+    d               reduce using rule 23 (upperCase -> O .)
+    e               reduce using rule 23 (upperCase -> O .)
+    f               reduce using rule 23 (upperCase -> O .)
+    g               reduce using rule 23 (upperCase -> O .)
+    h               reduce using rule 23 (upperCase -> O .)
+    i               reduce using rule 23 (upperCase -> O .)
+    j               reduce using rule 23 (upperCase -> O .)
+    k               reduce using rule 23 (upperCase -> O .)
+    l               reduce using rule 23 (upperCase -> O .)
+    m               reduce using rule 23 (upperCase -> O .)
+    n               reduce using rule 23 (upperCase -> O .)
+    o               reduce using rule 23 (upperCase -> O .)
+    p               reduce using rule 23 (upperCase -> O .)
+    q               reduce using rule 23 (upperCase -> O .)
+    r               reduce using rule 23 (upperCase -> O .)
+    s               reduce using rule 23 (upperCase -> O .)
+    t               reduce using rule 23 (upperCase -> O .)
+    u               reduce using rule 23 (upperCase -> O .)
+    v               reduce using rule 23 (upperCase -> O .)
+    x               reduce using rule 23 (upperCase -> O .)
+    w               reduce using rule 23 (upperCase -> O .)
+    y               reduce using rule 23 (upperCase -> O .)
+    z               reduce using rule 23 (upperCase -> O .)
+    SPACE           reduce using rule 23 (upperCase -> O .)
+    $end            reduce using rule 23 (upperCase -> O .)
+
+
+state 22
+
+    (24) upperCase -> P .
+
+    A               reduce using rule 24 (upperCase -> P .)
+    B               reduce using rule 24 (upperCase -> P .)
+    C               reduce using rule 24 (upperCase -> P .)
+    D               reduce using rule 24 (upperCase -> P .)
+    E               reduce using rule 24 (upperCase -> P .)
+    F               reduce using rule 24 (upperCase -> P .)
+    G               reduce using rule 24 (upperCase -> P .)
+    H               reduce using rule 24 (upperCase -> P .)
+    I               reduce using rule 24 (upperCase -> P .)
+    J               reduce using rule 24 (upperCase -> P .)
+    K               reduce using rule 24 (upperCase -> P .)
+    L               reduce using rule 24 (upperCase -> P .)
+    M               reduce using rule 24 (upperCase -> P .)
+    N               reduce using rule 24 (upperCase -> P .)
+    O               reduce using rule 24 (upperCase -> P .)
+    P               reduce using rule 24 (upperCase -> P .)
+    Q               reduce using rule 24 (upperCase -> P .)
+    R               reduce using rule 24 (upperCase -> P .)
+    S               reduce using rule 24 (upperCase -> P .)
+    T               reduce using rule 24 (upperCase -> P .)
+    U               reduce using rule 24 (upperCase -> P .)
+    V               reduce using rule 24 (upperCase -> P .)
+    X               reduce using rule 24 (upperCase -> P .)
+    W               reduce using rule 24 (upperCase -> P .)
+    Y               reduce using rule 24 (upperCase -> P .)
+    Z               reduce using rule 24 (upperCase -> P .)
+    a               reduce using rule 24 (upperCase -> P .)
+    b               reduce using rule 24 (upperCase -> P .)
+    c               reduce using rule 24 (upperCase -> P .)
+    d               reduce using rule 24 (upperCase -> P .)
+    e               reduce using rule 24 (upperCase -> P .)
+    f               reduce using rule 24 (upperCase -> P .)
+    g               reduce using rule 24 (upperCase -> P .)
+    h               reduce using rule 24 (upperCase -> P .)
+    i               reduce using rule 24 (upperCase -> P .)
+    j               reduce using rule 24 (upperCase -> P .)
+    k               reduce using rule 24 (upperCase -> P .)
+    l               reduce using rule 24 (upperCase -> P .)
+    m               reduce using rule 24 (upperCase -> P .)
+    n               reduce using rule 24 (upperCase -> P .)
+    o               reduce using rule 24 (upperCase -> P .)
+    p               reduce using rule 24 (upperCase -> P .)
+    q               reduce using rule 24 (upperCase -> P .)
+    r               reduce using rule 24 (upperCase -> P .)
+    s               reduce using rule 24 (upperCase -> P .)
+    t               reduce using rule 24 (upperCase -> P .)
+    u               reduce using rule 24 (upperCase -> P .)
+    v               reduce using rule 24 (upperCase -> P .)
+    x               reduce using rule 24 (upperCase -> P .)
+    w               reduce using rule 24 (upperCase -> P .)
+    y               reduce using rule 24 (upperCase -> P .)
+    z               reduce using rule 24 (upperCase -> P .)
+    SPACE           reduce using rule 24 (upperCase -> P .)
+    $end            reduce using rule 24 (upperCase -> P .)
+
+
+state 23
+
+    (25) upperCase -> Q .
+
+    A               reduce using rule 25 (upperCase -> Q .)
+    B               reduce using rule 25 (upperCase -> Q .)
+    C               reduce using rule 25 (upperCase -> Q .)
+    D               reduce using rule 25 (upperCase -> Q .)
+    E               reduce using rule 25 (upperCase -> Q .)
+    F               reduce using rule 25 (upperCase -> Q .)
+    G               reduce using rule 25 (upperCase -> Q .)
+    H               reduce using rule 25 (upperCase -> Q .)
+    I               reduce using rule 25 (upperCase -> Q .)
+    J               reduce using rule 25 (upperCase -> Q .)
+    K               reduce using rule 25 (upperCase -> Q .)
+    L               reduce using rule 25 (upperCase -> Q .)
+    M               reduce using rule 25 (upperCase -> Q .)
+    N               reduce using rule 25 (upperCase -> Q .)
+    O               reduce using rule 25 (upperCase -> Q .)
+    P               reduce using rule 25 (upperCase -> Q .)
+    Q               reduce using rule 25 (upperCase -> Q .)
+    R               reduce using rule 25 (upperCase -> Q .)
+    S               reduce using rule 25 (upperCase -> Q .)
+    T               reduce using rule 25 (upperCase -> Q .)
+    U               reduce using rule 25 (upperCase -> Q .)
+    V               reduce using rule 25 (upperCase -> Q .)
+    X               reduce using rule 25 (upperCase -> Q .)
+    W               reduce using rule 25 (upperCase -> Q .)
+    Y               reduce using rule 25 (upperCase -> Q .)
+    Z               reduce using rule 25 (upperCase -> Q .)
+    a               reduce using rule 25 (upperCase -> Q .)
+    b               reduce using rule 25 (upperCase -> Q .)
+    c               reduce using rule 25 (upperCase -> Q .)
+    d               reduce using rule 25 (upperCase -> Q .)
+    e               reduce using rule 25 (upperCase -> Q .)
+    f               reduce using rule 25 (upperCase -> Q .)
+    g               reduce using rule 25 (upperCase -> Q .)
+    h               reduce using rule 25 (upperCase -> Q .)
+    i               reduce using rule 25 (upperCase -> Q .)
+    j               reduce using rule 25 (upperCase -> Q .)
+    k               reduce using rule 25 (upperCase -> Q .)
+    l               reduce using rule 25 (upperCase -> Q .)
+    m               reduce using rule 25 (upperCase -> Q .)
+    n               reduce using rule 25 (upperCase -> Q .)
+    o               reduce using rule 25 (upperCase -> Q .)
+    p               reduce using rule 25 (upperCase -> Q .)
+    q               reduce using rule 25 (upperCase -> Q .)
+    r               reduce using rule 25 (upperCase -> Q .)
+    s               reduce using rule 25 (upperCase -> Q .)
+    t               reduce using rule 25 (upperCase -> Q .)
+    u               reduce using rule 25 (upperCase -> Q .)
+    v               reduce using rule 25 (upperCase -> Q .)
+    x               reduce using rule 25 (upperCase -> Q .)
+    w               reduce using rule 25 (upperCase -> Q .)
+    y               reduce using rule 25 (upperCase -> Q .)
+    z               reduce using rule 25 (upperCase -> Q .)
+    SPACE           reduce using rule 25 (upperCase -> Q .)
+    $end            reduce using rule 25 (upperCase -> Q .)
+
+
+state 24
+
+    (26) upperCase -> R .
+
+    A               reduce using rule 26 (upperCase -> R .)
+    B               reduce using rule 26 (upperCase -> R .)
+    C               reduce using rule 26 (upperCase -> R .)
+    D               reduce using rule 26 (upperCase -> R .)
+    E               reduce using rule 26 (upperCase -> R .)
+    F               reduce using rule 26 (upperCase -> R .)
+    G               reduce using rule 26 (upperCase -> R .)
+    H               reduce using rule 26 (upperCase -> R .)
+    I               reduce using rule 26 (upperCase -> R .)
+    J               reduce using rule 26 (upperCase -> R .)
+    K               reduce using rule 26 (upperCase -> R .)
+    L               reduce using rule 26 (upperCase -> R .)
+    M               reduce using rule 26 (upperCase -> R .)
+    N               reduce using rule 26 (upperCase -> R .)
+    O               reduce using rule 26 (upperCase -> R .)
+    P               reduce using rule 26 (upperCase -> R .)
+    Q               reduce using rule 26 (upperCase -> R .)
+    R               reduce using rule 26 (upperCase -> R .)
+    S               reduce using rule 26 (upperCase -> R .)
+    T               reduce using rule 26 (upperCase -> R .)
+    U               reduce using rule 26 (upperCase -> R .)
+    V               reduce using rule 26 (upperCase -> R .)
+    X               reduce using rule 26 (upperCase -> R .)
+    W               reduce using rule 26 (upperCase -> R .)
+    Y               reduce using rule 26 (upperCase -> R .)
+    Z               reduce using rule 26 (upperCase -> R .)
+    a               reduce using rule 26 (upperCase -> R .)
+    b               reduce using rule 26 (upperCase -> R .)
+    c               reduce using rule 26 (upperCase -> R .)
+    d               reduce using rule 26 (upperCase -> R .)
+    e               reduce using rule 26 (upperCase -> R .)
+    f               reduce using rule 26 (upperCase -> R .)
+    g               reduce using rule 26 (upperCase -> R .)
+    h               reduce using rule 26 (upperCase -> R .)
+    i               reduce using rule 26 (upperCase -> R .)
+    j               reduce using rule 26 (upperCase -> R .)
+    k               reduce using rule 26 (upperCase -> R .)
+    l               reduce using rule 26 (upperCase -> R .)
+    m               reduce using rule 26 (upperCase -> R .)
+    n               reduce using rule 26 (upperCase -> R .)
+    o               reduce using rule 26 (upperCase -> R .)
+    p               reduce using rule 26 (upperCase -> R .)
+    q               reduce using rule 26 (upperCase -> R .)
+    r               reduce using rule 26 (upperCase -> R .)
+    s               reduce using rule 26 (upperCase -> R .)
+    t               reduce using rule 26 (upperCase -> R .)
+    u               reduce using rule 26 (upperCase -> R .)
+    v               reduce using rule 26 (upperCase -> R .)
+    x               reduce using rule 26 (upperCase -> R .)
+    w               reduce using rule 26 (upperCase -> R .)
+    y               reduce using rule 26 (upperCase -> R .)
+    z               reduce using rule 26 (upperCase -> R .)
+    SPACE           reduce using rule 26 (upperCase -> R .)
+    $end            reduce using rule 26 (upperCase -> R .)
+
+
+state 25
+
+    (27) upperCase -> S .
+
+    A               reduce using rule 27 (upperCase -> S .)
+    B               reduce using rule 27 (upperCase -> S .)
+    C               reduce using rule 27 (upperCase -> S .)
+    D               reduce using rule 27 (upperCase -> S .)
+    E               reduce using rule 27 (upperCase -> S .)
+    F               reduce using rule 27 (upperCase -> S .)
+    G               reduce using rule 27 (upperCase -> S .)
+    H               reduce using rule 27 (upperCase -> S .)
+    I               reduce using rule 27 (upperCase -> S .)
+    J               reduce using rule 27 (upperCase -> S .)
+    K               reduce using rule 27 (upperCase -> S .)
+    L               reduce using rule 27 (upperCase -> S .)
+    M               reduce using rule 27 (upperCase -> S .)
+    N               reduce using rule 27 (upperCase -> S .)
+    O               reduce using rule 27 (upperCase -> S .)
+    P               reduce using rule 27 (upperCase -> S .)
+    Q               reduce using rule 27 (upperCase -> S .)
+    R               reduce using rule 27 (upperCase -> S .)
+    S               reduce using rule 27 (upperCase -> S .)
+    T               reduce using rule 27 (upperCase -> S .)
+    U               reduce using rule 27 (upperCase -> S .)
+    V               reduce using rule 27 (upperCase -> S .)
+    X               reduce using rule 27 (upperCase -> S .)
+    W               reduce using rule 27 (upperCase -> S .)
+    Y               reduce using rule 27 (upperCase -> S .)
+    Z               reduce using rule 27 (upperCase -> S .)
+    a               reduce using rule 27 (upperCase -> S .)
+    b               reduce using rule 27 (upperCase -> S .)
+    c               reduce using rule 27 (upperCase -> S .)
+    d               reduce using rule 27 (upperCase -> S .)
+    e               reduce using rule 27 (upperCase -> S .)
+    f               reduce using rule 27 (upperCase -> S .)
+    g               reduce using rule 27 (upperCase -> S .)
+    h               reduce using rule 27 (upperCase -> S .)
+    i               reduce using rule 27 (upperCase -> S .)
+    j               reduce using rule 27 (upperCase -> S .)
+    k               reduce using rule 27 (upperCase -> S .)
+    l               reduce using rule 27 (upperCase -> S .)
+    m               reduce using rule 27 (upperCase -> S .)
+    n               reduce using rule 27 (upperCase -> S .)
+    o               reduce using rule 27 (upperCase -> S .)
+    p               reduce using rule 27 (upperCase -> S .)
+    q               reduce using rule 27 (upperCase -> S .)
+    r               reduce using rule 27 (upperCase -> S .)
+    s               reduce using rule 27 (upperCase -> S .)
+    t               reduce using rule 27 (upperCase -> S .)
+    u               reduce using rule 27 (upperCase -> S .)
+    v               reduce using rule 27 (upperCase -> S .)
+    x               reduce using rule 27 (upperCase -> S .)
+    w               reduce using rule 27 (upperCase -> S .)
+    y               reduce using rule 27 (upperCase -> S .)
+    z               reduce using rule 27 (upperCase -> S .)
+    SPACE           reduce using rule 27 (upperCase -> S .)
+    $end            reduce using rule 27 (upperCase -> S .)
+
+
+state 26
+
+    (28) upperCase -> T .
+
+    A               reduce using rule 28 (upperCase -> T .)
+    B               reduce using rule 28 (upperCase -> T .)
+    C               reduce using rule 28 (upperCase -> T .)
+    D               reduce using rule 28 (upperCase -> T .)
+    E               reduce using rule 28 (upperCase -> T .)
+    F               reduce using rule 28 (upperCase -> T .)
+    G               reduce using rule 28 (upperCase -> T .)
+    H               reduce using rule 28 (upperCase -> T .)
+    I               reduce using rule 28 (upperCase -> T .)
+    J               reduce using rule 28 (upperCase -> T .)
+    K               reduce using rule 28 (upperCase -> T .)
+    L               reduce using rule 28 (upperCase -> T .)
+    M               reduce using rule 28 (upperCase -> T .)
+    N               reduce using rule 28 (upperCase -> T .)
+    O               reduce using rule 28 (upperCase -> T .)
+    P               reduce using rule 28 (upperCase -> T .)
+    Q               reduce using rule 28 (upperCase -> T .)
+    R               reduce using rule 28 (upperCase -> T .)
+    S               reduce using rule 28 (upperCase -> T .)
+    T               reduce using rule 28 (upperCase -> T .)
+    U               reduce using rule 28 (upperCase -> T .)
+    V               reduce using rule 28 (upperCase -> T .)
+    X               reduce using rule 28 (upperCase -> T .)
+    W               reduce using rule 28 (upperCase -> T .)
+    Y               reduce using rule 28 (upperCase -> T .)
+    Z               reduce using rule 28 (upperCase -> T .)
+    a               reduce using rule 28 (upperCase -> T .)
+    b               reduce using rule 28 (upperCase -> T .)
+    c               reduce using rule 28 (upperCase -> T .)
+    d               reduce using rule 28 (upperCase -> T .)
+    e               reduce using rule 28 (upperCase -> T .)
+    f               reduce using rule 28 (upperCase -> T .)
+    g               reduce using rule 28 (upperCase -> T .)
+    h               reduce using rule 28 (upperCase -> T .)
+    i               reduce using rule 28 (upperCase -> T .)
+    j               reduce using rule 28 (upperCase -> T .)
+    k               reduce using rule 28 (upperCase -> T .)
+    l               reduce using rule 28 (upperCase -> T .)
+    m               reduce using rule 28 (upperCase -> T .)
+    n               reduce using rule 28 (upperCase -> T .)
+    o               reduce using rule 28 (upperCase -> T .)
+    p               reduce using rule 28 (upperCase -> T .)
+    q               reduce using rule 28 (upperCase -> T .)
+    r               reduce using rule 28 (upperCase -> T .)
+    s               reduce using rule 28 (upperCase -> T .)
+    t               reduce using rule 28 (upperCase -> T .)
+    u               reduce using rule 28 (upperCase -> T .)
+    v               reduce using rule 28 (upperCase -> T .)
+    x               reduce using rule 28 (upperCase -> T .)
+    w               reduce using rule 28 (upperCase -> T .)
+    y               reduce using rule 28 (upperCase -> T .)
+    z               reduce using rule 28 (upperCase -> T .)
+    SPACE           reduce using rule 28 (upperCase -> T .)
+    $end            reduce using rule 28 (upperCase -> T .)
+
+
+state 27
+
+    (29) upperCase -> U .
+
+    A               reduce using rule 29 (upperCase -> U .)
+    B               reduce using rule 29 (upperCase -> U .)
+    C               reduce using rule 29 (upperCase -> U .)
+    D               reduce using rule 29 (upperCase -> U .)
+    E               reduce using rule 29 (upperCase -> U .)
+    F               reduce using rule 29 (upperCase -> U .)
+    G               reduce using rule 29 (upperCase -> U .)
+    H               reduce using rule 29 (upperCase -> U .)
+    I               reduce using rule 29 (upperCase -> U .)
+    J               reduce using rule 29 (upperCase -> U .)
+    K               reduce using rule 29 (upperCase -> U .)
+    L               reduce using rule 29 (upperCase -> U .)
+    M               reduce using rule 29 (upperCase -> U .)
+    N               reduce using rule 29 (upperCase -> U .)
+    O               reduce using rule 29 (upperCase -> U .)
+    P               reduce using rule 29 (upperCase -> U .)
+    Q               reduce using rule 29 (upperCase -> U .)
+    R               reduce using rule 29 (upperCase -> U .)
+    S               reduce using rule 29 (upperCase -> U .)
+    T               reduce using rule 29 (upperCase -> U .)
+    U               reduce using rule 29 (upperCase -> U .)
+    V               reduce using rule 29 (upperCase -> U .)
+    X               reduce using rule 29 (upperCase -> U .)
+    W               reduce using rule 29 (upperCase -> U .)
+    Y               reduce using rule 29 (upperCase -> U .)
+    Z               reduce using rule 29 (upperCase -> U .)
+    a               reduce using rule 29 (upperCase -> U .)
+    b               reduce using rule 29 (upperCase -> U .)
+    c               reduce using rule 29 (upperCase -> U .)
+    d               reduce using rule 29 (upperCase -> U .)
+    e               reduce using rule 29 (upperCase -> U .)
+    f               reduce using rule 29 (upperCase -> U .)
+    g               reduce using rule 29 (upperCase -> U .)
+    h               reduce using rule 29 (upperCase -> U .)
+    i               reduce using rule 29 (upperCase -> U .)
+    j               reduce using rule 29 (upperCase -> U .)
+    k               reduce using rule 29 (upperCase -> U .)
+    l               reduce using rule 29 (upperCase -> U .)
+    m               reduce using rule 29 (upperCase -> U .)
+    n               reduce using rule 29 (upperCase -> U .)
+    o               reduce using rule 29 (upperCase -> U .)
+    p               reduce using rule 29 (upperCase -> U .)
+    q               reduce using rule 29 (upperCase -> U .)
+    r               reduce using rule 29 (upperCase -> U .)
+    s               reduce using rule 29 (upperCase -> U .)
+    t               reduce using rule 29 (upperCase -> U .)
+    u               reduce using rule 29 (upperCase -> U .)
+    v               reduce using rule 29 (upperCase -> U .)
+    x               reduce using rule 29 (upperCase -> U .)
+    w               reduce using rule 29 (upperCase -> U .)
+    y               reduce using rule 29 (upperCase -> U .)
+    z               reduce using rule 29 (upperCase -> U .)
+    SPACE           reduce using rule 29 (upperCase -> U .)
+    $end            reduce using rule 29 (upperCase -> U .)
+
+
+state 28
+
+    (30) upperCase -> V .
+
+    A               reduce using rule 30 (upperCase -> V .)
+    B               reduce using rule 30 (upperCase -> V .)
+    C               reduce using rule 30 (upperCase -> V .)
+    D               reduce using rule 30 (upperCase -> V .)
+    E               reduce using rule 30 (upperCase -> V .)
+    F               reduce using rule 30 (upperCase -> V .)
+    G               reduce using rule 30 (upperCase -> V .)
+    H               reduce using rule 30 (upperCase -> V .)
+    I               reduce using rule 30 (upperCase -> V .)
+    J               reduce using rule 30 (upperCase -> V .)
+    K               reduce using rule 30 (upperCase -> V .)
+    L               reduce using rule 30 (upperCase -> V .)
+    M               reduce using rule 30 (upperCase -> V .)
+    N               reduce using rule 30 (upperCase -> V .)
+    O               reduce using rule 30 (upperCase -> V .)
+    P               reduce using rule 30 (upperCase -> V .)
+    Q               reduce using rule 30 (upperCase -> V .)
+    R               reduce using rule 30 (upperCase -> V .)
+    S               reduce using rule 30 (upperCase -> V .)
+    T               reduce using rule 30 (upperCase -> V .)
+    U               reduce using rule 30 (upperCase -> V .)
+    V               reduce using rule 30 (upperCase -> V .)
+    X               reduce using rule 30 (upperCase -> V .)
+    W               reduce using rule 30 (upperCase -> V .)
+    Y               reduce using rule 30 (upperCase -> V .)
+    Z               reduce using rule 30 (upperCase -> V .)
+    a               reduce using rule 30 (upperCase -> V .)
+    b               reduce using rule 30 (upperCase -> V .)
+    c               reduce using rule 30 (upperCase -> V .)
+    d               reduce using rule 30 (upperCase -> V .)
+    e               reduce using rule 30 (upperCase -> V .)
+    f               reduce using rule 30 (upperCase -> V .)
+    g               reduce using rule 30 (upperCase -> V .)
+    h               reduce using rule 30 (upperCase -> V .)
+    i               reduce using rule 30 (upperCase -> V .)
+    j               reduce using rule 30 (upperCase -> V .)
+    k               reduce using rule 30 (upperCase -> V .)
+    l               reduce using rule 30 (upperCase -> V .)
+    m               reduce using rule 30 (upperCase -> V .)
+    n               reduce using rule 30 (upperCase -> V .)
+    o               reduce using rule 30 (upperCase -> V .)
+    p               reduce using rule 30 (upperCase -> V .)
+    q               reduce using rule 30 (upperCase -> V .)
+    r               reduce using rule 30 (upperCase -> V .)
+    s               reduce using rule 30 (upperCase -> V .)
+    t               reduce using rule 30 (upperCase -> V .)
+    u               reduce using rule 30 (upperCase -> V .)
+    v               reduce using rule 30 (upperCase -> V .)
+    x               reduce using rule 30 (upperCase -> V .)
+    w               reduce using rule 30 (upperCase -> V .)
+    y               reduce using rule 30 (upperCase -> V .)
+    z               reduce using rule 30 (upperCase -> V .)
+    SPACE           reduce using rule 30 (upperCase -> V .)
+    $end            reduce using rule 30 (upperCase -> V .)
+
+
+state 29
+
+    (31) upperCase -> X .
+
+    A               reduce using rule 31 (upperCase -> X .)
+    B               reduce using rule 31 (upperCase -> X .)
+    C               reduce using rule 31 (upperCase -> X .)
+    D               reduce using rule 31 (upperCase -> X .)
+    E               reduce using rule 31 (upperCase -> X .)
+    F               reduce using rule 31 (upperCase -> X .)
+    G               reduce using rule 31 (upperCase -> X .)
+    H               reduce using rule 31 (upperCase -> X .)
+    I               reduce using rule 31 (upperCase -> X .)
+    J               reduce using rule 31 (upperCase -> X .)
+    K               reduce using rule 31 (upperCase -> X .)
+    L               reduce using rule 31 (upperCase -> X .)
+    M               reduce using rule 31 (upperCase -> X .)
+    N               reduce using rule 31 (upperCase -> X .)
+    O               reduce using rule 31 (upperCase -> X .)
+    P               reduce using rule 31 (upperCase -> X .)
+    Q               reduce using rule 31 (upperCase -> X .)
+    R               reduce using rule 31 (upperCase -> X .)
+    S               reduce using rule 31 (upperCase -> X .)
+    T               reduce using rule 31 (upperCase -> X .)
+    U               reduce using rule 31 (upperCase -> X .)
+    V               reduce using rule 31 (upperCase -> X .)
+    X               reduce using rule 31 (upperCase -> X .)
+    W               reduce using rule 31 (upperCase -> X .)
+    Y               reduce using rule 31 (upperCase -> X .)
+    Z               reduce using rule 31 (upperCase -> X .)
+    a               reduce using rule 31 (upperCase -> X .)
+    b               reduce using rule 31 (upperCase -> X .)
+    c               reduce using rule 31 (upperCase -> X .)
+    d               reduce using rule 31 (upperCase -> X .)
+    e               reduce using rule 31 (upperCase -> X .)
+    f               reduce using rule 31 (upperCase -> X .)
+    g               reduce using rule 31 (upperCase -> X .)
+    h               reduce using rule 31 (upperCase -> X .)
+    i               reduce using rule 31 (upperCase -> X .)
+    j               reduce using rule 31 (upperCase -> X .)
+    k               reduce using rule 31 (upperCase -> X .)
+    l               reduce using rule 31 (upperCase -> X .)
+    m               reduce using rule 31 (upperCase -> X .)
+    n               reduce using rule 31 (upperCase -> X .)
+    o               reduce using rule 31 (upperCase -> X .)
+    p               reduce using rule 31 (upperCase -> X .)
+    q               reduce using rule 31 (upperCase -> X .)
+    r               reduce using rule 31 (upperCase -> X .)
+    s               reduce using rule 31 (upperCase -> X .)
+    t               reduce using rule 31 (upperCase -> X .)
+    u               reduce using rule 31 (upperCase -> X .)
+    v               reduce using rule 31 (upperCase -> X .)
+    x               reduce using rule 31 (upperCase -> X .)
+    w               reduce using rule 31 (upperCase -> X .)
+    y               reduce using rule 31 (upperCase -> X .)
+    z               reduce using rule 31 (upperCase -> X .)
+    SPACE           reduce using rule 31 (upperCase -> X .)
+    $end            reduce using rule 31 (upperCase -> X .)
+
+
+state 30
+
+    (32) upperCase -> W .
+
+    A               reduce using rule 32 (upperCase -> W .)
+    B               reduce using rule 32 (upperCase -> W .)
+    C               reduce using rule 32 (upperCase -> W .)
+    D               reduce using rule 32 (upperCase -> W .)
+    E               reduce using rule 32 (upperCase -> W .)
+    F               reduce using rule 32 (upperCase -> W .)
+    G               reduce using rule 32 (upperCase -> W .)
+    H               reduce using rule 32 (upperCase -> W .)
+    I               reduce using rule 32 (upperCase -> W .)
+    J               reduce using rule 32 (upperCase -> W .)
+    K               reduce using rule 32 (upperCase -> W .)
+    L               reduce using rule 32 (upperCase -> W .)
+    M               reduce using rule 32 (upperCase -> W .)
+    N               reduce using rule 32 (upperCase -> W .)
+    O               reduce using rule 32 (upperCase -> W .)
+    P               reduce using rule 32 (upperCase -> W .)
+    Q               reduce using rule 32 (upperCase -> W .)
+    R               reduce using rule 32 (upperCase -> W .)
+    S               reduce using rule 32 (upperCase -> W .)
+    T               reduce using rule 32 (upperCase -> W .)
+    U               reduce using rule 32 (upperCase -> W .)
+    V               reduce using rule 32 (upperCase -> W .)
+    X               reduce using rule 32 (upperCase -> W .)
+    W               reduce using rule 32 (upperCase -> W .)
+    Y               reduce using rule 32 (upperCase -> W .)
+    Z               reduce using rule 32 (upperCase -> W .)
+    a               reduce using rule 32 (upperCase -> W .)
+    b               reduce using rule 32 (upperCase -> W .)
+    c               reduce using rule 32 (upperCase -> W .)
+    d               reduce using rule 32 (upperCase -> W .)
+    e               reduce using rule 32 (upperCase -> W .)
+    f               reduce using rule 32 (upperCase -> W .)
+    g               reduce using rule 32 (upperCase -> W .)
+    h               reduce using rule 32 (upperCase -> W .)
+    i               reduce using rule 32 (upperCase -> W .)
+    j               reduce using rule 32 (upperCase -> W .)
+    k               reduce using rule 32 (upperCase -> W .)
+    l               reduce using rule 32 (upperCase -> W .)
+    m               reduce using rule 32 (upperCase -> W .)
+    n               reduce using rule 32 (upperCase -> W .)
+    o               reduce using rule 32 (upperCase -> W .)
+    p               reduce using rule 32 (upperCase -> W .)
+    q               reduce using rule 32 (upperCase -> W .)
+    r               reduce using rule 32 (upperCase -> W .)
+    s               reduce using rule 32 (upperCase -> W .)
+    t               reduce using rule 32 (upperCase -> W .)
+    u               reduce using rule 32 (upperCase -> W .)
+    v               reduce using rule 32 (upperCase -> W .)
+    x               reduce using rule 32 (upperCase -> W .)
+    w               reduce using rule 32 (upperCase -> W .)
+    y               reduce using rule 32 (upperCase -> W .)
+    z               reduce using rule 32 (upperCase -> W .)
+    SPACE           reduce using rule 32 (upperCase -> W .)
+    $end            reduce using rule 32 (upperCase -> W .)
+
+
+state 31
+
+    (33) upperCase -> Y .
+
+    A               reduce using rule 33 (upperCase -> Y .)
+    B               reduce using rule 33 (upperCase -> Y .)
+    C               reduce using rule 33 (upperCase -> Y .)
+    D               reduce using rule 33 (upperCase -> Y .)
+    E               reduce using rule 33 (upperCase -> Y .)
+    F               reduce using rule 33 (upperCase -> Y .)
+    G               reduce using rule 33 (upperCase -> Y .)
+    H               reduce using rule 33 (upperCase -> Y .)
+    I               reduce using rule 33 (upperCase -> Y .)
+    J               reduce using rule 33 (upperCase -> Y .)
+    K               reduce using rule 33 (upperCase -> Y .)
+    L               reduce using rule 33 (upperCase -> Y .)
+    M               reduce using rule 33 (upperCase -> Y .)
+    N               reduce using rule 33 (upperCase -> Y .)
+    O               reduce using rule 33 (upperCase -> Y .)
+    P               reduce using rule 33 (upperCase -> Y .)
+    Q               reduce using rule 33 (upperCase -> Y .)
+    R               reduce using rule 33 (upperCase -> Y .)
+    S               reduce using rule 33 (upperCase -> Y .)
+    T               reduce using rule 33 (upperCase -> Y .)
+    U               reduce using rule 33 (upperCase -> Y .)
+    V               reduce using rule 33 (upperCase -> Y .)
+    X               reduce using rule 33 (upperCase -> Y .)
+    W               reduce using rule 33 (upperCase -> Y .)
+    Y               reduce using rule 33 (upperCase -> Y .)
+    Z               reduce using rule 33 (upperCase -> Y .)
+    a               reduce using rule 33 (upperCase -> Y .)
+    b               reduce using rule 33 (upperCase -> Y .)
+    c               reduce using rule 33 (upperCase -> Y .)
+    d               reduce using rule 33 (upperCase -> Y .)
+    e               reduce using rule 33 (upperCase -> Y .)
+    f               reduce using rule 33 (upperCase -> Y .)
+    g               reduce using rule 33 (upperCase -> Y .)
+    h               reduce using rule 33 (upperCase -> Y .)
+    i               reduce using rule 33 (upperCase -> Y .)
+    j               reduce using rule 33 (upperCase -> Y .)
+    k               reduce using rule 33 (upperCase -> Y .)
+    l               reduce using rule 33 (upperCase -> Y .)
+    m               reduce using rule 33 (upperCase -> Y .)
+    n               reduce using rule 33 (upperCase -> Y .)
+    o               reduce using rule 33 (upperCase -> Y .)
+    p               reduce using rule 33 (upperCase -> Y .)
+    q               reduce using rule 33 (upperCase -> Y .)
+    r               reduce using rule 33 (upperCase -> Y .)
+    s               reduce using rule 33 (upperCase -> Y .)
+    t               reduce using rule 33 (upperCase -> Y .)
+    u               reduce using rule 33 (upperCase -> Y .)
+    v               reduce using rule 33 (upperCase -> Y .)
+    x               reduce using rule 33 (upperCase -> Y .)
+    w               reduce using rule 33 (upperCase -> Y .)
+    y               reduce using rule 33 (upperCase -> Y .)
+    z               reduce using rule 33 (upperCase -> Y .)
+    SPACE           reduce using rule 33 (upperCase -> Y .)
+    $end            reduce using rule 33 (upperCase -> Y .)
+
+
+state 32
+
+    (34) upperCase -> Z .
+
+    A               reduce using rule 34 (upperCase -> Z .)
+    B               reduce using rule 34 (upperCase -> Z .)
+    C               reduce using rule 34 (upperCase -> Z .)
+    D               reduce using rule 34 (upperCase -> Z .)
+    E               reduce using rule 34 (upperCase -> Z .)
+    F               reduce using rule 34 (upperCase -> Z .)
+    G               reduce using rule 34 (upperCase -> Z .)
+    H               reduce using rule 34 (upperCase -> Z .)
+    I               reduce using rule 34 (upperCase -> Z .)
+    J               reduce using rule 34 (upperCase -> Z .)
+    K               reduce using rule 34 (upperCase -> Z .)
+    L               reduce using rule 34 (upperCase -> Z .)
+    M               reduce using rule 34 (upperCase -> Z .)
+    N               reduce using rule 34 (upperCase -> Z .)
+    O               reduce using rule 34 (upperCase -> Z .)
+    P               reduce using rule 34 (upperCase -> Z .)
+    Q               reduce using rule 34 (upperCase -> Z .)
+    R               reduce using rule 34 (upperCase -> Z .)
+    S               reduce using rule 34 (upperCase -> Z .)
+    T               reduce using rule 34 (upperCase -> Z .)
+    U               reduce using rule 34 (upperCase -> Z .)
+    V               reduce using rule 34 (upperCase -> Z .)
+    X               reduce using rule 34 (upperCase -> Z .)
+    W               reduce using rule 34 (upperCase -> Z .)
+    Y               reduce using rule 34 (upperCase -> Z .)
+    Z               reduce using rule 34 (upperCase -> Z .)
+    a               reduce using rule 34 (upperCase -> Z .)
+    b               reduce using rule 34 (upperCase -> Z .)
+    c               reduce using rule 34 (upperCase -> Z .)
+    d               reduce using rule 34 (upperCase -> Z .)
+    e               reduce using rule 34 (upperCase -> Z .)
+    f               reduce using rule 34 (upperCase -> Z .)
+    g               reduce using rule 34 (upperCase -> Z .)
+    h               reduce using rule 34 (upperCase -> Z .)
+    i               reduce using rule 34 (upperCase -> Z .)
+    j               reduce using rule 34 (upperCase -> Z .)
+    k               reduce using rule 34 (upperCase -> Z .)
+    l               reduce using rule 34 (upperCase -> Z .)
+    m               reduce using rule 34 (upperCase -> Z .)
+    n               reduce using rule 34 (upperCase -> Z .)
+    o               reduce using rule 34 (upperCase -> Z .)
+    p               reduce using rule 34 (upperCase -> Z .)
+    q               reduce using rule 34 (upperCase -> Z .)
+    r               reduce using rule 34 (upperCase -> Z .)
+    s               reduce using rule 34 (upperCase -> Z .)
+    t               reduce using rule 34 (upperCase -> Z .)
+    u               reduce using rule 34 (upperCase -> Z .)
+    v               reduce using rule 34 (upperCase -> Z .)
+    x               reduce using rule 34 (upperCase -> Z .)
+    w               reduce using rule 34 (upperCase -> Z .)
+    y               reduce using rule 34 (upperCase -> Z .)
+    z               reduce using rule 34 (upperCase -> Z .)
+    SPACE           reduce using rule 34 (upperCase -> Z .)
+    $end            reduce using rule 34 (upperCase -> Z .)
+
+
+state 33
+
+    (35) lowerCase -> a .
+
+    A               reduce using rule 35 (lowerCase -> a .)
+    B               reduce using rule 35 (lowerCase -> a .)
+    C               reduce using rule 35 (lowerCase -> a .)
+    D               reduce using rule 35 (lowerCase -> a .)
+    E               reduce using rule 35 (lowerCase -> a .)
+    F               reduce using rule 35 (lowerCase -> a .)
+    G               reduce using rule 35 (lowerCase -> a .)
+    H               reduce using rule 35 (lowerCase -> a .)
+    I               reduce using rule 35 (lowerCase -> a .)
+    J               reduce using rule 35 (lowerCase -> a .)
+    K               reduce using rule 35 (lowerCase -> a .)
+    L               reduce using rule 35 (lowerCase -> a .)
+    M               reduce using rule 35 (lowerCase -> a .)
+    N               reduce using rule 35 (lowerCase -> a .)
+    O               reduce using rule 35 (lowerCase -> a .)
+    P               reduce using rule 35 (lowerCase -> a .)
+    Q               reduce using rule 35 (lowerCase -> a .)
+    R               reduce using rule 35 (lowerCase -> a .)
+    S               reduce using rule 35 (lowerCase -> a .)
+    T               reduce using rule 35 (lowerCase -> a .)
+    U               reduce using rule 35 (lowerCase -> a .)
+    V               reduce using rule 35 (lowerCase -> a .)
+    X               reduce using rule 35 (lowerCase -> a .)
+    W               reduce using rule 35 (lowerCase -> a .)
+    Y               reduce using rule 35 (lowerCase -> a .)
+    Z               reduce using rule 35 (lowerCase -> a .)
+    a               reduce using rule 35 (lowerCase -> a .)
+    b               reduce using rule 35 (lowerCase -> a .)
+    c               reduce using rule 35 (lowerCase -> a .)
+    d               reduce using rule 35 (lowerCase -> a .)
+    e               reduce using rule 35 (lowerCase -> a .)
+    f               reduce using rule 35 (lowerCase -> a .)
+    g               reduce using rule 35 (lowerCase -> a .)
+    h               reduce using rule 35 (lowerCase -> a .)
+    i               reduce using rule 35 (lowerCase -> a .)
+    j               reduce using rule 35 (lowerCase -> a .)
+    k               reduce using rule 35 (lowerCase -> a .)
+    l               reduce using rule 35 (lowerCase -> a .)
+    m               reduce using rule 35 (lowerCase -> a .)
+    n               reduce using rule 35 (lowerCase -> a .)
+    o               reduce using rule 35 (lowerCase -> a .)
+    p               reduce using rule 35 (lowerCase -> a .)
+    q               reduce using rule 35 (lowerCase -> a .)
+    r               reduce using rule 35 (lowerCase -> a .)
+    s               reduce using rule 35 (lowerCase -> a .)
+    t               reduce using rule 35 (lowerCase -> a .)
+    u               reduce using rule 35 (lowerCase -> a .)
+    v               reduce using rule 35 (lowerCase -> a .)
+    x               reduce using rule 35 (lowerCase -> a .)
+    w               reduce using rule 35 (lowerCase -> a .)
+    y               reduce using rule 35 (lowerCase -> a .)
+    z               reduce using rule 35 (lowerCase -> a .)
+    SPACE           reduce using rule 35 (lowerCase -> a .)
+    $end            reduce using rule 35 (lowerCase -> a .)
+
+
+state 34
+
+    (36) lowerCase -> b .
+
+    A               reduce using rule 36 (lowerCase -> b .)
+    B               reduce using rule 36 (lowerCase -> b .)
+    C               reduce using rule 36 (lowerCase -> b .)
+    D               reduce using rule 36 (lowerCase -> b .)
+    E               reduce using rule 36 (lowerCase -> b .)
+    F               reduce using rule 36 (lowerCase -> b .)
+    G               reduce using rule 36 (lowerCase -> b .)
+    H               reduce using rule 36 (lowerCase -> b .)
+    I               reduce using rule 36 (lowerCase -> b .)
+    J               reduce using rule 36 (lowerCase -> b .)
+    K               reduce using rule 36 (lowerCase -> b .)
+    L               reduce using rule 36 (lowerCase -> b .)
+    M               reduce using rule 36 (lowerCase -> b .)
+    N               reduce using rule 36 (lowerCase -> b .)
+    O               reduce using rule 36 (lowerCase -> b .)
+    P               reduce using rule 36 (lowerCase -> b .)
+    Q               reduce using rule 36 (lowerCase -> b .)
+    R               reduce using rule 36 (lowerCase -> b .)
+    S               reduce using rule 36 (lowerCase -> b .)
+    T               reduce using rule 36 (lowerCase -> b .)
+    U               reduce using rule 36 (lowerCase -> b .)
+    V               reduce using rule 36 (lowerCase -> b .)
+    X               reduce using rule 36 (lowerCase -> b .)
+    W               reduce using rule 36 (lowerCase -> b .)
+    Y               reduce using rule 36 (lowerCase -> b .)
+    Z               reduce using rule 36 (lowerCase -> b .)
+    a               reduce using rule 36 (lowerCase -> b .)
+    b               reduce using rule 36 (lowerCase -> b .)
+    c               reduce using rule 36 (lowerCase -> b .)
+    d               reduce using rule 36 (lowerCase -> b .)
+    e               reduce using rule 36 (lowerCase -> b .)
+    f               reduce using rule 36 (lowerCase -> b .)
+    g               reduce using rule 36 (lowerCase -> b .)
+    h               reduce using rule 36 (lowerCase -> b .)
+    i               reduce using rule 36 (lowerCase -> b .)
+    j               reduce using rule 36 (lowerCase -> b .)
+    k               reduce using rule 36 (lowerCase -> b .)
+    l               reduce using rule 36 (lowerCase -> b .)
+    m               reduce using rule 36 (lowerCase -> b .)
+    n               reduce using rule 36 (lowerCase -> b .)
+    o               reduce using rule 36 (lowerCase -> b .)
+    p               reduce using rule 36 (lowerCase -> b .)
+    q               reduce using rule 36 (lowerCase -> b .)
+    r               reduce using rule 36 (lowerCase -> b .)
+    s               reduce using rule 36 (lowerCase -> b .)
+    t               reduce using rule 36 (lowerCase -> b .)
+    u               reduce using rule 36 (lowerCase -> b .)
+    v               reduce using rule 36 (lowerCase -> b .)
+    x               reduce using rule 36 (lowerCase -> b .)
+    w               reduce using rule 36 (lowerCase -> b .)
+    y               reduce using rule 36 (lowerCase -> b .)
+    z               reduce using rule 36 (lowerCase -> b .)
+    SPACE           reduce using rule 36 (lowerCase -> b .)
+    $end            reduce using rule 36 (lowerCase -> b .)
+
+
+state 35
+
+    (37) lowerCase -> c .
+
+    A               reduce using rule 37 (lowerCase -> c .)
+    B               reduce using rule 37 (lowerCase -> c .)
+    C               reduce using rule 37 (lowerCase -> c .)
+    D               reduce using rule 37 (lowerCase -> c .)
+    E               reduce using rule 37 (lowerCase -> c .)
+    F               reduce using rule 37 (lowerCase -> c .)
+    G               reduce using rule 37 (lowerCase -> c .)
+    H               reduce using rule 37 (lowerCase -> c .)
+    I               reduce using rule 37 (lowerCase -> c .)
+    J               reduce using rule 37 (lowerCase -> c .)
+    K               reduce using rule 37 (lowerCase -> c .)
+    L               reduce using rule 37 (lowerCase -> c .)
+    M               reduce using rule 37 (lowerCase -> c .)
+    N               reduce using rule 37 (lowerCase -> c .)
+    O               reduce using rule 37 (lowerCase -> c .)
+    P               reduce using rule 37 (lowerCase -> c .)
+    Q               reduce using rule 37 (lowerCase -> c .)
+    R               reduce using rule 37 (lowerCase -> c .)
+    S               reduce using rule 37 (lowerCase -> c .)
+    T               reduce using rule 37 (lowerCase -> c .)
+    U               reduce using rule 37 (lowerCase -> c .)
+    V               reduce using rule 37 (lowerCase -> c .)
+    X               reduce using rule 37 (lowerCase -> c .)
+    W               reduce using rule 37 (lowerCase -> c .)
+    Y               reduce using rule 37 (lowerCase -> c .)
+    Z               reduce using rule 37 (lowerCase -> c .)
+    a               reduce using rule 37 (lowerCase -> c .)
+    b               reduce using rule 37 (lowerCase -> c .)
+    c               reduce using rule 37 (lowerCase -> c .)
+    d               reduce using rule 37 (lowerCase -> c .)
+    e               reduce using rule 37 (lowerCase -> c .)
+    f               reduce using rule 37 (lowerCase -> c .)
+    g               reduce using rule 37 (lowerCase -> c .)
+    h               reduce using rule 37 (lowerCase -> c .)
+    i               reduce using rule 37 (lowerCase -> c .)
+    j               reduce using rule 37 (lowerCase -> c .)
+    k               reduce using rule 37 (lowerCase -> c .)
+    l               reduce using rule 37 (lowerCase -> c .)
+    m               reduce using rule 37 (lowerCase -> c .)
+    n               reduce using rule 37 (lowerCase -> c .)
+    o               reduce using rule 37 (lowerCase -> c .)
+    p               reduce using rule 37 (lowerCase -> c .)
+    q               reduce using rule 37 (lowerCase -> c .)
+    r               reduce using rule 37 (lowerCase -> c .)
+    s               reduce using rule 37 (lowerCase -> c .)
+    t               reduce using rule 37 (lowerCase -> c .)
+    u               reduce using rule 37 (lowerCase -> c .)
+    v               reduce using rule 37 (lowerCase -> c .)
+    x               reduce using rule 37 (lowerCase -> c .)
+    w               reduce using rule 37 (lowerCase -> c .)
+    y               reduce using rule 37 (lowerCase -> c .)
+    z               reduce using rule 37 (lowerCase -> c .)
+    SPACE           reduce using rule 37 (lowerCase -> c .)
+    $end            reduce using rule 37 (lowerCase -> c .)
+
+
+state 36
+
+    (38) lowerCase -> d .
+
+    A               reduce using rule 38 (lowerCase -> d .)
+    B               reduce using rule 38 (lowerCase -> d .)
+    C               reduce using rule 38 (lowerCase -> d .)
+    D               reduce using rule 38 (lowerCase -> d .)
+    E               reduce using rule 38 (lowerCase -> d .)
+    F               reduce using rule 38 (lowerCase -> d .)
+    G               reduce using rule 38 (lowerCase -> d .)
+    H               reduce using rule 38 (lowerCase -> d .)
+    I               reduce using rule 38 (lowerCase -> d .)
+    J               reduce using rule 38 (lowerCase -> d .)
+    K               reduce using rule 38 (lowerCase -> d .)
+    L               reduce using rule 38 (lowerCase -> d .)
+    M               reduce using rule 38 (lowerCase -> d .)
+    N               reduce using rule 38 (lowerCase -> d .)
+    O               reduce using rule 38 (lowerCase -> d .)
+    P               reduce using rule 38 (lowerCase -> d .)
+    Q               reduce using rule 38 (lowerCase -> d .)
+    R               reduce using rule 38 (lowerCase -> d .)
+    S               reduce using rule 38 (lowerCase -> d .)
+    T               reduce using rule 38 (lowerCase -> d .)
+    U               reduce using rule 38 (lowerCase -> d .)
+    V               reduce using rule 38 (lowerCase -> d .)
+    X               reduce using rule 38 (lowerCase -> d .)
+    W               reduce using rule 38 (lowerCase -> d .)
+    Y               reduce using rule 38 (lowerCase -> d .)
+    Z               reduce using rule 38 (lowerCase -> d .)
+    a               reduce using rule 38 (lowerCase -> d .)
+    b               reduce using rule 38 (lowerCase -> d .)
+    c               reduce using rule 38 (lowerCase -> d .)
+    d               reduce using rule 38 (lowerCase -> d .)
+    e               reduce using rule 38 (lowerCase -> d .)
+    f               reduce using rule 38 (lowerCase -> d .)
+    g               reduce using rule 38 (lowerCase -> d .)
+    h               reduce using rule 38 (lowerCase -> d .)
+    i               reduce using rule 38 (lowerCase -> d .)
+    j               reduce using rule 38 (lowerCase -> d .)
+    k               reduce using rule 38 (lowerCase -> d .)
+    l               reduce using rule 38 (lowerCase -> d .)
+    m               reduce using rule 38 (lowerCase -> d .)
+    n               reduce using rule 38 (lowerCase -> d .)
+    o               reduce using rule 38 (lowerCase -> d .)
+    p               reduce using rule 38 (lowerCase -> d .)
+    q               reduce using rule 38 (lowerCase -> d .)
+    r               reduce using rule 38 (lowerCase -> d .)
+    s               reduce using rule 38 (lowerCase -> d .)
+    t               reduce using rule 38 (lowerCase -> d .)
+    u               reduce using rule 38 (lowerCase -> d .)
+    v               reduce using rule 38 (lowerCase -> d .)
+    x               reduce using rule 38 (lowerCase -> d .)
+    w               reduce using rule 38 (lowerCase -> d .)
+    y               reduce using rule 38 (lowerCase -> d .)
+    z               reduce using rule 38 (lowerCase -> d .)
+    SPACE           reduce using rule 38 (lowerCase -> d .)
+    $end            reduce using rule 38 (lowerCase -> d .)
+
+
+state 37
+
+    (39) lowerCase -> e .
+
+    A               reduce using rule 39 (lowerCase -> e .)
+    B               reduce using rule 39 (lowerCase -> e .)
+    C               reduce using rule 39 (lowerCase -> e .)
+    D               reduce using rule 39 (lowerCase -> e .)
+    E               reduce using rule 39 (lowerCase -> e .)
+    F               reduce using rule 39 (lowerCase -> e .)
+    G               reduce using rule 39 (lowerCase -> e .)
+    H               reduce using rule 39 (lowerCase -> e .)
+    I               reduce using rule 39 (lowerCase -> e .)
+    J               reduce using rule 39 (lowerCase -> e .)
+    K               reduce using rule 39 (lowerCase -> e .)
+    L               reduce using rule 39 (lowerCase -> e .)
+    M               reduce using rule 39 (lowerCase -> e .)
+    N               reduce using rule 39 (lowerCase -> e .)
+    O               reduce using rule 39 (lowerCase -> e .)
+    P               reduce using rule 39 (lowerCase -> e .)
+    Q               reduce using rule 39 (lowerCase -> e .)
+    R               reduce using rule 39 (lowerCase -> e .)
+    S               reduce using rule 39 (lowerCase -> e .)
+    T               reduce using rule 39 (lowerCase -> e .)
+    U               reduce using rule 39 (lowerCase -> e .)
+    V               reduce using rule 39 (lowerCase -> e .)
+    X               reduce using rule 39 (lowerCase -> e .)
+    W               reduce using rule 39 (lowerCase -> e .)
+    Y               reduce using rule 39 (lowerCase -> e .)
+    Z               reduce using rule 39 (lowerCase -> e .)
+    a               reduce using rule 39 (lowerCase -> e .)
+    b               reduce using rule 39 (lowerCase -> e .)
+    c               reduce using rule 39 (lowerCase -> e .)
+    d               reduce using rule 39 (lowerCase -> e .)
+    e               reduce using rule 39 (lowerCase -> e .)
+    f               reduce using rule 39 (lowerCase -> e .)
+    g               reduce using rule 39 (lowerCase -> e .)
+    h               reduce using rule 39 (lowerCase -> e .)
+    i               reduce using rule 39 (lowerCase -> e .)
+    j               reduce using rule 39 (lowerCase -> e .)
+    k               reduce using rule 39 (lowerCase -> e .)
+    l               reduce using rule 39 (lowerCase -> e .)
+    m               reduce using rule 39 (lowerCase -> e .)
+    n               reduce using rule 39 (lowerCase -> e .)
+    o               reduce using rule 39 (lowerCase -> e .)
+    p               reduce using rule 39 (lowerCase -> e .)
+    q               reduce using rule 39 (lowerCase -> e .)
+    r               reduce using rule 39 (lowerCase -> e .)
+    s               reduce using rule 39 (lowerCase -> e .)
+    t               reduce using rule 39 (lowerCase -> e .)
+    u               reduce using rule 39 (lowerCase -> e .)
+    v               reduce using rule 39 (lowerCase -> e .)
+    x               reduce using rule 39 (lowerCase -> e .)
+    w               reduce using rule 39 (lowerCase -> e .)
+    y               reduce using rule 39 (lowerCase -> e .)
+    z               reduce using rule 39 (lowerCase -> e .)
+    SPACE           reduce using rule 39 (lowerCase -> e .)
+    $end            reduce using rule 39 (lowerCase -> e .)
+
+
+state 38
+
+    (40) lowerCase -> f .
+
+    A               reduce using rule 40 (lowerCase -> f .)
+    B               reduce using rule 40 (lowerCase -> f .)
+    C               reduce using rule 40 (lowerCase -> f .)
+    D               reduce using rule 40 (lowerCase -> f .)
+    E               reduce using rule 40 (lowerCase -> f .)
+    F               reduce using rule 40 (lowerCase -> f .)
+    G               reduce using rule 40 (lowerCase -> f .)
+    H               reduce using rule 40 (lowerCase -> f .)
+    I               reduce using rule 40 (lowerCase -> f .)
+    J               reduce using rule 40 (lowerCase -> f .)
+    K               reduce using rule 40 (lowerCase -> f .)
+    L               reduce using rule 40 (lowerCase -> f .)
+    M               reduce using rule 40 (lowerCase -> f .)
+    N               reduce using rule 40 (lowerCase -> f .)
+    O               reduce using rule 40 (lowerCase -> f .)
+    P               reduce using rule 40 (lowerCase -> f .)
+    Q               reduce using rule 40 (lowerCase -> f .)
+    R               reduce using rule 40 (lowerCase -> f .)
+    S               reduce using rule 40 (lowerCase -> f .)
+    T               reduce using rule 40 (lowerCase -> f .)
+    U               reduce using rule 40 (lowerCase -> f .)
+    V               reduce using rule 40 (lowerCase -> f .)
+    X               reduce using rule 40 (lowerCase -> f .)
+    W               reduce using rule 40 (lowerCase -> f .)
+    Y               reduce using rule 40 (lowerCase -> f .)
+    Z               reduce using rule 40 (lowerCase -> f .)
+    a               reduce using rule 40 (lowerCase -> f .)
+    b               reduce using rule 40 (lowerCase -> f .)
+    c               reduce using rule 40 (lowerCase -> f .)
+    d               reduce using rule 40 (lowerCase -> f .)
+    e               reduce using rule 40 (lowerCase -> f .)
+    f               reduce using rule 40 (lowerCase -> f .)
+    g               reduce using rule 40 (lowerCase -> f .)
+    h               reduce using rule 40 (lowerCase -> f .)
+    i               reduce using rule 40 (lowerCase -> f .)
+    j               reduce using rule 40 (lowerCase -> f .)
+    k               reduce using rule 40 (lowerCase -> f .)
+    l               reduce using rule 40 (lowerCase -> f .)
+    m               reduce using rule 40 (lowerCase -> f .)
+    n               reduce using rule 40 (lowerCase -> f .)
+    o               reduce using rule 40 (lowerCase -> f .)
+    p               reduce using rule 40 (lowerCase -> f .)
+    q               reduce using rule 40 (lowerCase -> f .)
+    r               reduce using rule 40 (lowerCase -> f .)
+    s               reduce using rule 40 (lowerCase -> f .)
+    t               reduce using rule 40 (lowerCase -> f .)
+    u               reduce using rule 40 (lowerCase -> f .)
+    v               reduce using rule 40 (lowerCase -> f .)
+    x               reduce using rule 40 (lowerCase -> f .)
+    w               reduce using rule 40 (lowerCase -> f .)
+    y               reduce using rule 40 (lowerCase -> f .)
+    z               reduce using rule 40 (lowerCase -> f .)
+    SPACE           reduce using rule 40 (lowerCase -> f .)
+    $end            reduce using rule 40 (lowerCase -> f .)
+
+
+state 39
+
+    (41) lowerCase -> g .
+
+    A               reduce using rule 41 (lowerCase -> g .)
+    B               reduce using rule 41 (lowerCase -> g .)
+    C               reduce using rule 41 (lowerCase -> g .)
+    D               reduce using rule 41 (lowerCase -> g .)
+    E               reduce using rule 41 (lowerCase -> g .)
+    F               reduce using rule 41 (lowerCase -> g .)
+    G               reduce using rule 41 (lowerCase -> g .)
+    H               reduce using rule 41 (lowerCase -> g .)
+    I               reduce using rule 41 (lowerCase -> g .)
+    J               reduce using rule 41 (lowerCase -> g .)
+    K               reduce using rule 41 (lowerCase -> g .)
+    L               reduce using rule 41 (lowerCase -> g .)
+    M               reduce using rule 41 (lowerCase -> g .)
+    N               reduce using rule 41 (lowerCase -> g .)
+    O               reduce using rule 41 (lowerCase -> g .)
+    P               reduce using rule 41 (lowerCase -> g .)
+    Q               reduce using rule 41 (lowerCase -> g .)
+    R               reduce using rule 41 (lowerCase -> g .)
+    S               reduce using rule 41 (lowerCase -> g .)
+    T               reduce using rule 41 (lowerCase -> g .)
+    U               reduce using rule 41 (lowerCase -> g .)
+    V               reduce using rule 41 (lowerCase -> g .)
+    X               reduce using rule 41 (lowerCase -> g .)
+    W               reduce using rule 41 (lowerCase -> g .)
+    Y               reduce using rule 41 (lowerCase -> g .)
+    Z               reduce using rule 41 (lowerCase -> g .)
+    a               reduce using rule 41 (lowerCase -> g .)
+    b               reduce using rule 41 (lowerCase -> g .)
+    c               reduce using rule 41 (lowerCase -> g .)
+    d               reduce using rule 41 (lowerCase -> g .)
+    e               reduce using rule 41 (lowerCase -> g .)
+    f               reduce using rule 41 (lowerCase -> g .)
+    g               reduce using rule 41 (lowerCase -> g .)
+    h               reduce using rule 41 (lowerCase -> g .)
+    i               reduce using rule 41 (lowerCase -> g .)
+    j               reduce using rule 41 (lowerCase -> g .)
+    k               reduce using rule 41 (lowerCase -> g .)
+    l               reduce using rule 41 (lowerCase -> g .)
+    m               reduce using rule 41 (lowerCase -> g .)
+    n               reduce using rule 41 (lowerCase -> g .)
+    o               reduce using rule 41 (lowerCase -> g .)
+    p               reduce using rule 41 (lowerCase -> g .)
+    q               reduce using rule 41 (lowerCase -> g .)
+    r               reduce using rule 41 (lowerCase -> g .)
+    s               reduce using rule 41 (lowerCase -> g .)
+    t               reduce using rule 41 (lowerCase -> g .)
+    u               reduce using rule 41 (lowerCase -> g .)
+    v               reduce using rule 41 (lowerCase -> g .)
+    x               reduce using rule 41 (lowerCase -> g .)
+    w               reduce using rule 41 (lowerCase -> g .)
+    y               reduce using rule 41 (lowerCase -> g .)
+    z               reduce using rule 41 (lowerCase -> g .)
+    SPACE           reduce using rule 41 (lowerCase -> g .)
+    $end            reduce using rule 41 (lowerCase -> g .)
+
+
+state 40
+
+    (42) lowerCase -> h .
+
+    A               reduce using rule 42 (lowerCase -> h .)
+    B               reduce using rule 42 (lowerCase -> h .)
+    C               reduce using rule 42 (lowerCase -> h .)
+    D               reduce using rule 42 (lowerCase -> h .)
+    E               reduce using rule 42 (lowerCase -> h .)
+    F               reduce using rule 42 (lowerCase -> h .)
+    G               reduce using rule 42 (lowerCase -> h .)
+    H               reduce using rule 42 (lowerCase -> h .)
+    I               reduce using rule 42 (lowerCase -> h .)
+    J               reduce using rule 42 (lowerCase -> h .)
+    K               reduce using rule 42 (lowerCase -> h .)
+    L               reduce using rule 42 (lowerCase -> h .)
+    M               reduce using rule 42 (lowerCase -> h .)
+    N               reduce using rule 42 (lowerCase -> h .)
+    O               reduce using rule 42 (lowerCase -> h .)
+    P               reduce using rule 42 (lowerCase -> h .)
+    Q               reduce using rule 42 (lowerCase -> h .)
+    R               reduce using rule 42 (lowerCase -> h .)
+    S               reduce using rule 42 (lowerCase -> h .)
+    T               reduce using rule 42 (lowerCase -> h .)
+    U               reduce using rule 42 (lowerCase -> h .)
+    V               reduce using rule 42 (lowerCase -> h .)
+    X               reduce using rule 42 (lowerCase -> h .)
+    W               reduce using rule 42 (lowerCase -> h .)
+    Y               reduce using rule 42 (lowerCase -> h .)
+    Z               reduce using rule 42 (lowerCase -> h .)
+    a               reduce using rule 42 (lowerCase -> h .)
+    b               reduce using rule 42 (lowerCase -> h .)
+    c               reduce using rule 42 (lowerCase -> h .)
+    d               reduce using rule 42 (lowerCase -> h .)
+    e               reduce using rule 42 (lowerCase -> h .)
+    f               reduce using rule 42 (lowerCase -> h .)
+    g               reduce using rule 42 (lowerCase -> h .)
+    h               reduce using rule 42 (lowerCase -> h .)
+    i               reduce using rule 42 (lowerCase -> h .)
+    j               reduce using rule 42 (lowerCase -> h .)
+    k               reduce using rule 42 (lowerCase -> h .)
+    l               reduce using rule 42 (lowerCase -> h .)
+    m               reduce using rule 42 (lowerCase -> h .)
+    n               reduce using rule 42 (lowerCase -> h .)
+    o               reduce using rule 42 (lowerCase -> h .)
+    p               reduce using rule 42 (lowerCase -> h .)
+    q               reduce using rule 42 (lowerCase -> h .)
+    r               reduce using rule 42 (lowerCase -> h .)
+    s               reduce using rule 42 (lowerCase -> h .)
+    t               reduce using rule 42 (lowerCase -> h .)
+    u               reduce using rule 42 (lowerCase -> h .)
+    v               reduce using rule 42 (lowerCase -> h .)
+    x               reduce using rule 42 (lowerCase -> h .)
+    w               reduce using rule 42 (lowerCase -> h .)
+    y               reduce using rule 42 (lowerCase -> h .)
+    z               reduce using rule 42 (lowerCase -> h .)
+    SPACE           reduce using rule 42 (lowerCase -> h .)
+    $end            reduce using rule 42 (lowerCase -> h .)
+
+
+state 41
+
+    (43) lowerCase -> i .
+
+    A               reduce using rule 43 (lowerCase -> i .)
+    B               reduce using rule 43 (lowerCase -> i .)
+    C               reduce using rule 43 (lowerCase -> i .)
+    D               reduce using rule 43 (lowerCase -> i .)
+    E               reduce using rule 43 (lowerCase -> i .)
+    F               reduce using rule 43 (lowerCase -> i .)
+    G               reduce using rule 43 (lowerCase -> i .)
+    H               reduce using rule 43 (lowerCase -> i .)
+    I               reduce using rule 43 (lowerCase -> i .)
+    J               reduce using rule 43 (lowerCase -> i .)
+    K               reduce using rule 43 (lowerCase -> i .)
+    L               reduce using rule 43 (lowerCase -> i .)
+    M               reduce using rule 43 (lowerCase -> i .)
+    N               reduce using rule 43 (lowerCase -> i .)
+    O               reduce using rule 43 (lowerCase -> i .)
+    P               reduce using rule 43 (lowerCase -> i .)
+    Q               reduce using rule 43 (lowerCase -> i .)
+    R               reduce using rule 43 (lowerCase -> i .)
+    S               reduce using rule 43 (lowerCase -> i .)
+    T               reduce using rule 43 (lowerCase -> i .)
+    U               reduce using rule 43 (lowerCase -> i .)
+    V               reduce using rule 43 (lowerCase -> i .)
+    X               reduce using rule 43 (lowerCase -> i .)
+    W               reduce using rule 43 (lowerCase -> i .)
+    Y               reduce using rule 43 (lowerCase -> i .)
+    Z               reduce using rule 43 (lowerCase -> i .)
+    a               reduce using rule 43 (lowerCase -> i .)
+    b               reduce using rule 43 (lowerCase -> i .)
+    c               reduce using rule 43 (lowerCase -> i .)
+    d               reduce using rule 43 (lowerCase -> i .)
+    e               reduce using rule 43 (lowerCase -> i .)
+    f               reduce using rule 43 (lowerCase -> i .)
+    g               reduce using rule 43 (lowerCase -> i .)
+    h               reduce using rule 43 (lowerCase -> i .)
+    i               reduce using rule 43 (lowerCase -> i .)
+    j               reduce using rule 43 (lowerCase -> i .)
+    k               reduce using rule 43 (lowerCase -> i .)
+    l               reduce using rule 43 (lowerCase -> i .)
+    m               reduce using rule 43 (lowerCase -> i .)
+    n               reduce using rule 43 (lowerCase -> i .)
+    o               reduce using rule 43 (lowerCase -> i .)
+    p               reduce using rule 43 (lowerCase -> i .)
+    q               reduce using rule 43 (lowerCase -> i .)
+    r               reduce using rule 43 (lowerCase -> i .)
+    s               reduce using rule 43 (lowerCase -> i .)
+    t               reduce using rule 43 (lowerCase -> i .)
+    u               reduce using rule 43 (lowerCase -> i .)
+    v               reduce using rule 43 (lowerCase -> i .)
+    x               reduce using rule 43 (lowerCase -> i .)
+    w               reduce using rule 43 (lowerCase -> i .)
+    y               reduce using rule 43 (lowerCase -> i .)
+    z               reduce using rule 43 (lowerCase -> i .)
+    SPACE           reduce using rule 43 (lowerCase -> i .)
+    $end            reduce using rule 43 (lowerCase -> i .)
+
+
+state 42
+
+    (44) lowerCase -> j .
+
+    A               reduce using rule 44 (lowerCase -> j .)
+    B               reduce using rule 44 (lowerCase -> j .)
+    C               reduce using rule 44 (lowerCase -> j .)
+    D               reduce using rule 44 (lowerCase -> j .)
+    E               reduce using rule 44 (lowerCase -> j .)
+    F               reduce using rule 44 (lowerCase -> j .)
+    G               reduce using rule 44 (lowerCase -> j .)
+    H               reduce using rule 44 (lowerCase -> j .)
+    I               reduce using rule 44 (lowerCase -> j .)
+    J               reduce using rule 44 (lowerCase -> j .)
+    K               reduce using rule 44 (lowerCase -> j .)
+    L               reduce using rule 44 (lowerCase -> j .)
+    M               reduce using rule 44 (lowerCase -> j .)
+    N               reduce using rule 44 (lowerCase -> j .)
+    O               reduce using rule 44 (lowerCase -> j .)
+    P               reduce using rule 44 (lowerCase -> j .)
+    Q               reduce using rule 44 (lowerCase -> j .)
+    R               reduce using rule 44 (lowerCase -> j .)
+    S               reduce using rule 44 (lowerCase -> j .)
+    T               reduce using rule 44 (lowerCase -> j .)
+    U               reduce using rule 44 (lowerCase -> j .)
+    V               reduce using rule 44 (lowerCase -> j .)
+    X               reduce using rule 44 (lowerCase -> j .)
+    W               reduce using rule 44 (lowerCase -> j .)
+    Y               reduce using rule 44 (lowerCase -> j .)
+    Z               reduce using rule 44 (lowerCase -> j .)
+    a               reduce using rule 44 (lowerCase -> j .)
+    b               reduce using rule 44 (lowerCase -> j .)
+    c               reduce using rule 44 (lowerCase -> j .)
+    d               reduce using rule 44 (lowerCase -> j .)
+    e               reduce using rule 44 (lowerCase -> j .)
+    f               reduce using rule 44 (lowerCase -> j .)
+    g               reduce using rule 44 (lowerCase -> j .)
+    h               reduce using rule 44 (lowerCase -> j .)
+    i               reduce using rule 44 (lowerCase -> j .)
+    j               reduce using rule 44 (lowerCase -> j .)
+    k               reduce using rule 44 (lowerCase -> j .)
+    l               reduce using rule 44 (lowerCase -> j .)
+    m               reduce using rule 44 (lowerCase -> j .)
+    n               reduce using rule 44 (lowerCase -> j .)
+    o               reduce using rule 44 (lowerCase -> j .)
+    p               reduce using rule 44 (lowerCase -> j .)
+    q               reduce using rule 44 (lowerCase -> j .)
+    r               reduce using rule 44 (lowerCase -> j .)
+    s               reduce using rule 44 (lowerCase -> j .)
+    t               reduce using rule 44 (lowerCase -> j .)
+    u               reduce using rule 44 (lowerCase -> j .)
+    v               reduce using rule 44 (lowerCase -> j .)
+    x               reduce using rule 44 (lowerCase -> j .)
+    w               reduce using rule 44 (lowerCase -> j .)
+    y               reduce using rule 44 (lowerCase -> j .)
+    z               reduce using rule 44 (lowerCase -> j .)
+    SPACE           reduce using rule 44 (lowerCase -> j .)
+    $end            reduce using rule 44 (lowerCase -> j .)
+
+
+state 43
+
+    (45) lowerCase -> k .
+
+    A               reduce using rule 45 (lowerCase -> k .)
+    B               reduce using rule 45 (lowerCase -> k .)
+    C               reduce using rule 45 (lowerCase -> k .)
+    D               reduce using rule 45 (lowerCase -> k .)
+    E               reduce using rule 45 (lowerCase -> k .)
+    F               reduce using rule 45 (lowerCase -> k .)
+    G               reduce using rule 45 (lowerCase -> k .)
+    H               reduce using rule 45 (lowerCase -> k .)
+    I               reduce using rule 45 (lowerCase -> k .)
+    J               reduce using rule 45 (lowerCase -> k .)
+    K               reduce using rule 45 (lowerCase -> k .)
+    L               reduce using rule 45 (lowerCase -> k .)
+    M               reduce using rule 45 (lowerCase -> k .)
+    N               reduce using rule 45 (lowerCase -> k .)
+    O               reduce using rule 45 (lowerCase -> k .)
+    P               reduce using rule 45 (lowerCase -> k .)
+    Q               reduce using rule 45 (lowerCase -> k .)
+    R               reduce using rule 45 (lowerCase -> k .)
+    S               reduce using rule 45 (lowerCase -> k .)
+    T               reduce using rule 45 (lowerCase -> k .)
+    U               reduce using rule 45 (lowerCase -> k .)
+    V               reduce using rule 45 (lowerCase -> k .)
+    X               reduce using rule 45 (lowerCase -> k .)
+    W               reduce using rule 45 (lowerCase -> k .)
+    Y               reduce using rule 45 (lowerCase -> k .)
+    Z               reduce using rule 45 (lowerCase -> k .)
+    a               reduce using rule 45 (lowerCase -> k .)
+    b               reduce using rule 45 (lowerCase -> k .)
+    c               reduce using rule 45 (lowerCase -> k .)
+    d               reduce using rule 45 (lowerCase -> k .)
+    e               reduce using rule 45 (lowerCase -> k .)
+    f               reduce using rule 45 (lowerCase -> k .)
+    g               reduce using rule 45 (lowerCase -> k .)
+    h               reduce using rule 45 (lowerCase -> k .)
+    i               reduce using rule 45 (lowerCase -> k .)
+    j               reduce using rule 45 (lowerCase -> k .)
+    k               reduce using rule 45 (lowerCase -> k .)
+    l               reduce using rule 45 (lowerCase -> k .)
+    m               reduce using rule 45 (lowerCase -> k .)
+    n               reduce using rule 45 (lowerCase -> k .)
+    o               reduce using rule 45 (lowerCase -> k .)
+    p               reduce using rule 45 (lowerCase -> k .)
+    q               reduce using rule 45 (lowerCase -> k .)
+    r               reduce using rule 45 (lowerCase -> k .)
+    s               reduce using rule 45 (lowerCase -> k .)
+    t               reduce using rule 45 (lowerCase -> k .)
+    u               reduce using rule 45 (lowerCase -> k .)
+    v               reduce using rule 45 (lowerCase -> k .)
+    x               reduce using rule 45 (lowerCase -> k .)
+    w               reduce using rule 45 (lowerCase -> k .)
+    y               reduce using rule 45 (lowerCase -> k .)
+    z               reduce using rule 45 (lowerCase -> k .)
+    SPACE           reduce using rule 45 (lowerCase -> k .)
+    $end            reduce using rule 45 (lowerCase -> k .)
+
+
+state 44
+
+    (46) lowerCase -> l .
+
+    A               reduce using rule 46 (lowerCase -> l .)
+    B               reduce using rule 46 (lowerCase -> l .)
+    C               reduce using rule 46 (lowerCase -> l .)
+    D               reduce using rule 46 (lowerCase -> l .)
+    E               reduce using rule 46 (lowerCase -> l .)
+    F               reduce using rule 46 (lowerCase -> l .)
+    G               reduce using rule 46 (lowerCase -> l .)
+    H               reduce using rule 46 (lowerCase -> l .)
+    I               reduce using rule 46 (lowerCase -> l .)
+    J               reduce using rule 46 (lowerCase -> l .)
+    K               reduce using rule 46 (lowerCase -> l .)
+    L               reduce using rule 46 (lowerCase -> l .)
+    M               reduce using rule 46 (lowerCase -> l .)
+    N               reduce using rule 46 (lowerCase -> l .)
+    O               reduce using rule 46 (lowerCase -> l .)
+    P               reduce using rule 46 (lowerCase -> l .)
+    Q               reduce using rule 46 (lowerCase -> l .)
+    R               reduce using rule 46 (lowerCase -> l .)
+    S               reduce using rule 46 (lowerCase -> l .)
+    T               reduce using rule 46 (lowerCase -> l .)
+    U               reduce using rule 46 (lowerCase -> l .)
+    V               reduce using rule 46 (lowerCase -> l .)
+    X               reduce using rule 46 (lowerCase -> l .)
+    W               reduce using rule 46 (lowerCase -> l .)
+    Y               reduce using rule 46 (lowerCase -> l .)
+    Z               reduce using rule 46 (lowerCase -> l .)
+    a               reduce using rule 46 (lowerCase -> l .)
+    b               reduce using rule 46 (lowerCase -> l .)
+    c               reduce using rule 46 (lowerCase -> l .)
+    d               reduce using rule 46 (lowerCase -> l .)
+    e               reduce using rule 46 (lowerCase -> l .)
+    f               reduce using rule 46 (lowerCase -> l .)
+    g               reduce using rule 46 (lowerCase -> l .)
+    h               reduce using rule 46 (lowerCase -> l .)
+    i               reduce using rule 46 (lowerCase -> l .)
+    j               reduce using rule 46 (lowerCase -> l .)
+    k               reduce using rule 46 (lowerCase -> l .)
+    l               reduce using rule 46 (lowerCase -> l .)
+    m               reduce using rule 46 (lowerCase -> l .)
+    n               reduce using rule 46 (lowerCase -> l .)
+    o               reduce using rule 46 (lowerCase -> l .)
+    p               reduce using rule 46 (lowerCase -> l .)
+    q               reduce using rule 46 (lowerCase -> l .)
+    r               reduce using rule 46 (lowerCase -> l .)
+    s               reduce using rule 46 (lowerCase -> l .)
+    t               reduce using rule 46 (lowerCase -> l .)
+    u               reduce using rule 46 (lowerCase -> l .)
+    v               reduce using rule 46 (lowerCase -> l .)
+    x               reduce using rule 46 (lowerCase -> l .)
+    w               reduce using rule 46 (lowerCase -> l .)
+    y               reduce using rule 46 (lowerCase -> l .)
+    z               reduce using rule 46 (lowerCase -> l .)
+    SPACE           reduce using rule 46 (lowerCase -> l .)
+    $end            reduce using rule 46 (lowerCase -> l .)
+
+
+state 45
+
+    (47) lowerCase -> m .
+
+    A               reduce using rule 47 (lowerCase -> m .)
+    B               reduce using rule 47 (lowerCase -> m .)
+    C               reduce using rule 47 (lowerCase -> m .)
+    D               reduce using rule 47 (lowerCase -> m .)
+    E               reduce using rule 47 (lowerCase -> m .)
+    F               reduce using rule 47 (lowerCase -> m .)
+    G               reduce using rule 47 (lowerCase -> m .)
+    H               reduce using rule 47 (lowerCase -> m .)
+    I               reduce using rule 47 (lowerCase -> m .)
+    J               reduce using rule 47 (lowerCase -> m .)
+    K               reduce using rule 47 (lowerCase -> m .)
+    L               reduce using rule 47 (lowerCase -> m .)
+    M               reduce using rule 47 (lowerCase -> m .)
+    N               reduce using rule 47 (lowerCase -> m .)
+    O               reduce using rule 47 (lowerCase -> m .)
+    P               reduce using rule 47 (lowerCase -> m .)
+    Q               reduce using rule 47 (lowerCase -> m .)
+    R               reduce using rule 47 (lowerCase -> m .)
+    S               reduce using rule 47 (lowerCase -> m .)
+    T               reduce using rule 47 (lowerCase -> m .)
+    U               reduce using rule 47 (lowerCase -> m .)
+    V               reduce using rule 47 (lowerCase -> m .)
+    X               reduce using rule 47 (lowerCase -> m .)
+    W               reduce using rule 47 (lowerCase -> m .)
+    Y               reduce using rule 47 (lowerCase -> m .)
+    Z               reduce using rule 47 (lowerCase -> m .)
+    a               reduce using rule 47 (lowerCase -> m .)
+    b               reduce using rule 47 (lowerCase -> m .)
+    c               reduce using rule 47 (lowerCase -> m .)
+    d               reduce using rule 47 (lowerCase -> m .)
+    e               reduce using rule 47 (lowerCase -> m .)
+    f               reduce using rule 47 (lowerCase -> m .)
+    g               reduce using rule 47 (lowerCase -> m .)
+    h               reduce using rule 47 (lowerCase -> m .)
+    i               reduce using rule 47 (lowerCase -> m .)
+    j               reduce using rule 47 (lowerCase -> m .)
+    k               reduce using rule 47 (lowerCase -> m .)
+    l               reduce using rule 47 (lowerCase -> m .)
+    m               reduce using rule 47 (lowerCase -> m .)
+    n               reduce using rule 47 (lowerCase -> m .)
+    o               reduce using rule 47 (lowerCase -> m .)
+    p               reduce using rule 47 (lowerCase -> m .)
+    q               reduce using rule 47 (lowerCase -> m .)
+    r               reduce using rule 47 (lowerCase -> m .)
+    s               reduce using rule 47 (lowerCase -> m .)
+    t               reduce using rule 47 (lowerCase -> m .)
+    u               reduce using rule 47 (lowerCase -> m .)
+    v               reduce using rule 47 (lowerCase -> m .)
+    x               reduce using rule 47 (lowerCase -> m .)
+    w               reduce using rule 47 (lowerCase -> m .)
+    y               reduce using rule 47 (lowerCase -> m .)
+    z               reduce using rule 47 (lowerCase -> m .)
+    SPACE           reduce using rule 47 (lowerCase -> m .)
+    $end            reduce using rule 47 (lowerCase -> m .)
+
+
+state 46
+
+    (48) lowerCase -> n .
+
+    A               reduce using rule 48 (lowerCase -> n .)
+    B               reduce using rule 48 (lowerCase -> n .)
+    C               reduce using rule 48 (lowerCase -> n .)
+    D               reduce using rule 48 (lowerCase -> n .)
+    E               reduce using rule 48 (lowerCase -> n .)
+    F               reduce using rule 48 (lowerCase -> n .)
+    G               reduce using rule 48 (lowerCase -> n .)
+    H               reduce using rule 48 (lowerCase -> n .)
+    I               reduce using rule 48 (lowerCase -> n .)
+    J               reduce using rule 48 (lowerCase -> n .)
+    K               reduce using rule 48 (lowerCase -> n .)
+    L               reduce using rule 48 (lowerCase -> n .)
+    M               reduce using rule 48 (lowerCase -> n .)
+    N               reduce using rule 48 (lowerCase -> n .)
+    O               reduce using rule 48 (lowerCase -> n .)
+    P               reduce using rule 48 (lowerCase -> n .)
+    Q               reduce using rule 48 (lowerCase -> n .)
+    R               reduce using rule 48 (lowerCase -> n .)
+    S               reduce using rule 48 (lowerCase -> n .)
+    T               reduce using rule 48 (lowerCase -> n .)
+    U               reduce using rule 48 (lowerCase -> n .)
+    V               reduce using rule 48 (lowerCase -> n .)
+    X               reduce using rule 48 (lowerCase -> n .)
+    W               reduce using rule 48 (lowerCase -> n .)
+    Y               reduce using rule 48 (lowerCase -> n .)
+    Z               reduce using rule 48 (lowerCase -> n .)
+    a               reduce using rule 48 (lowerCase -> n .)
+    b               reduce using rule 48 (lowerCase -> n .)
+    c               reduce using rule 48 (lowerCase -> n .)
+    d               reduce using rule 48 (lowerCase -> n .)
+    e               reduce using rule 48 (lowerCase -> n .)
+    f               reduce using rule 48 (lowerCase -> n .)
+    g               reduce using rule 48 (lowerCase -> n .)
+    h               reduce using rule 48 (lowerCase -> n .)
+    i               reduce using rule 48 (lowerCase -> n .)
+    j               reduce using rule 48 (lowerCase -> n .)
+    k               reduce using rule 48 (lowerCase -> n .)
+    l               reduce using rule 48 (lowerCase -> n .)
+    m               reduce using rule 48 (lowerCase -> n .)
+    n               reduce using rule 48 (lowerCase -> n .)
+    o               reduce using rule 48 (lowerCase -> n .)
+    p               reduce using rule 48 (lowerCase -> n .)
+    q               reduce using rule 48 (lowerCase -> n .)
+    r               reduce using rule 48 (lowerCase -> n .)
+    s               reduce using rule 48 (lowerCase -> n .)
+    t               reduce using rule 48 (lowerCase -> n .)
+    u               reduce using rule 48 (lowerCase -> n .)
+    v               reduce using rule 48 (lowerCase -> n .)
+    x               reduce using rule 48 (lowerCase -> n .)
+    w               reduce using rule 48 (lowerCase -> n .)
+    y               reduce using rule 48 (lowerCase -> n .)
+    z               reduce using rule 48 (lowerCase -> n .)
+    SPACE           reduce using rule 48 (lowerCase -> n .)
+    $end            reduce using rule 48 (lowerCase -> n .)
+
+
+state 47
+
+    (49) lowerCase -> o .
+
+    A               reduce using rule 49 (lowerCase -> o .)
+    B               reduce using rule 49 (lowerCase -> o .)
+    C               reduce using rule 49 (lowerCase -> o .)
+    D               reduce using rule 49 (lowerCase -> o .)
+    E               reduce using rule 49 (lowerCase -> o .)
+    F               reduce using rule 49 (lowerCase -> o .)
+    G               reduce using rule 49 (lowerCase -> o .)
+    H               reduce using rule 49 (lowerCase -> o .)
+    I               reduce using rule 49 (lowerCase -> o .)
+    J               reduce using rule 49 (lowerCase -> o .)
+    K               reduce using rule 49 (lowerCase -> o .)
+    L               reduce using rule 49 (lowerCase -> o .)
+    M               reduce using rule 49 (lowerCase -> o .)
+    N               reduce using rule 49 (lowerCase -> o .)
+    O               reduce using rule 49 (lowerCase -> o .)
+    P               reduce using rule 49 (lowerCase -> o .)
+    Q               reduce using rule 49 (lowerCase -> o .)
+    R               reduce using rule 49 (lowerCase -> o .)
+    S               reduce using rule 49 (lowerCase -> o .)
+    T               reduce using rule 49 (lowerCase -> o .)
+    U               reduce using rule 49 (lowerCase -> o .)
+    V               reduce using rule 49 (lowerCase -> o .)
+    X               reduce using rule 49 (lowerCase -> o .)
+    W               reduce using rule 49 (lowerCase -> o .)
+    Y               reduce using rule 49 (lowerCase -> o .)
+    Z               reduce using rule 49 (lowerCase -> o .)
+    a               reduce using rule 49 (lowerCase -> o .)
+    b               reduce using rule 49 (lowerCase -> o .)
+    c               reduce using rule 49 (lowerCase -> o .)
+    d               reduce using rule 49 (lowerCase -> o .)
+    e               reduce using rule 49 (lowerCase -> o .)
+    f               reduce using rule 49 (lowerCase -> o .)
+    g               reduce using rule 49 (lowerCase -> o .)
+    h               reduce using rule 49 (lowerCase -> o .)
+    i               reduce using rule 49 (lowerCase -> o .)
+    j               reduce using rule 49 (lowerCase -> o .)
+    k               reduce using rule 49 (lowerCase -> o .)
+    l               reduce using rule 49 (lowerCase -> o .)
+    m               reduce using rule 49 (lowerCase -> o .)
+    n               reduce using rule 49 (lowerCase -> o .)
+    o               reduce using rule 49 (lowerCase -> o .)
+    p               reduce using rule 49 (lowerCase -> o .)
+    q               reduce using rule 49 (lowerCase -> o .)
+    r               reduce using rule 49 (lowerCase -> o .)
+    s               reduce using rule 49 (lowerCase -> o .)
+    t               reduce using rule 49 (lowerCase -> o .)
+    u               reduce using rule 49 (lowerCase -> o .)
+    v               reduce using rule 49 (lowerCase -> o .)
+    x               reduce using rule 49 (lowerCase -> o .)
+    w               reduce using rule 49 (lowerCase -> o .)
+    y               reduce using rule 49 (lowerCase -> o .)
+    z               reduce using rule 49 (lowerCase -> o .)
+    SPACE           reduce using rule 49 (lowerCase -> o .)
+    $end            reduce using rule 49 (lowerCase -> o .)
+
+
+state 48
+
+    (50) lowerCase -> p .
+
+    A               reduce using rule 50 (lowerCase -> p .)
+    B               reduce using rule 50 (lowerCase -> p .)
+    C               reduce using rule 50 (lowerCase -> p .)
+    D               reduce using rule 50 (lowerCase -> p .)
+    E               reduce using rule 50 (lowerCase -> p .)
+    F               reduce using rule 50 (lowerCase -> p .)
+    G               reduce using rule 50 (lowerCase -> p .)
+    H               reduce using rule 50 (lowerCase -> p .)
+    I               reduce using rule 50 (lowerCase -> p .)
+    J               reduce using rule 50 (lowerCase -> p .)
+    K               reduce using rule 50 (lowerCase -> p .)
+    L               reduce using rule 50 (lowerCase -> p .)
+    M               reduce using rule 50 (lowerCase -> p .)
+    N               reduce using rule 50 (lowerCase -> p .)
+    O               reduce using rule 50 (lowerCase -> p .)
+    P               reduce using rule 50 (lowerCase -> p .)
+    Q               reduce using rule 50 (lowerCase -> p .)
+    R               reduce using rule 50 (lowerCase -> p .)
+    S               reduce using rule 50 (lowerCase -> p .)
+    T               reduce using rule 50 (lowerCase -> p .)
+    U               reduce using rule 50 (lowerCase -> p .)
+    V               reduce using rule 50 (lowerCase -> p .)
+    X               reduce using rule 50 (lowerCase -> p .)
+    W               reduce using rule 50 (lowerCase -> p .)
+    Y               reduce using rule 50 (lowerCase -> p .)
+    Z               reduce using rule 50 (lowerCase -> p .)
+    a               reduce using rule 50 (lowerCase -> p .)
+    b               reduce using rule 50 (lowerCase -> p .)
+    c               reduce using rule 50 (lowerCase -> p .)
+    d               reduce using rule 50 (lowerCase -> p .)
+    e               reduce using rule 50 (lowerCase -> p .)
+    f               reduce using rule 50 (lowerCase -> p .)
+    g               reduce using rule 50 (lowerCase -> p .)
+    h               reduce using rule 50 (lowerCase -> p .)
+    i               reduce using rule 50 (lowerCase -> p .)
+    j               reduce using rule 50 (lowerCase -> p .)
+    k               reduce using rule 50 (lowerCase -> p .)
+    l               reduce using rule 50 (lowerCase -> p .)
+    m               reduce using rule 50 (lowerCase -> p .)
+    n               reduce using rule 50 (lowerCase -> p .)
+    o               reduce using rule 50 (lowerCase -> p .)
+    p               reduce using rule 50 (lowerCase -> p .)
+    q               reduce using rule 50 (lowerCase -> p .)
+    r               reduce using rule 50 (lowerCase -> p .)
+    s               reduce using rule 50 (lowerCase -> p .)
+    t               reduce using rule 50 (lowerCase -> p .)
+    u               reduce using rule 50 (lowerCase -> p .)
+    v               reduce using rule 50 (lowerCase -> p .)
+    x               reduce using rule 50 (lowerCase -> p .)
+    w               reduce using rule 50 (lowerCase -> p .)
+    y               reduce using rule 50 (lowerCase -> p .)
+    z               reduce using rule 50 (lowerCase -> p .)
+    SPACE           reduce using rule 50 (lowerCase -> p .)
+    $end            reduce using rule 50 (lowerCase -> p .)
+
+
+state 49
+
+    (51) lowerCase -> q .
+
+    A               reduce using rule 51 (lowerCase -> q .)
+    B               reduce using rule 51 (lowerCase -> q .)
+    C               reduce using rule 51 (lowerCase -> q .)
+    D               reduce using rule 51 (lowerCase -> q .)
+    E               reduce using rule 51 (lowerCase -> q .)
+    F               reduce using rule 51 (lowerCase -> q .)
+    G               reduce using rule 51 (lowerCase -> q .)
+    H               reduce using rule 51 (lowerCase -> q .)
+    I               reduce using rule 51 (lowerCase -> q .)
+    J               reduce using rule 51 (lowerCase -> q .)
+    K               reduce using rule 51 (lowerCase -> q .)
+    L               reduce using rule 51 (lowerCase -> q .)
+    M               reduce using rule 51 (lowerCase -> q .)
+    N               reduce using rule 51 (lowerCase -> q .)
+    O               reduce using rule 51 (lowerCase -> q .)
+    P               reduce using rule 51 (lowerCase -> q .)
+    Q               reduce using rule 51 (lowerCase -> q .)
+    R               reduce using rule 51 (lowerCase -> q .)
+    S               reduce using rule 51 (lowerCase -> q .)
+    T               reduce using rule 51 (lowerCase -> q .)
+    U               reduce using rule 51 (lowerCase -> q .)
+    V               reduce using rule 51 (lowerCase -> q .)
+    X               reduce using rule 51 (lowerCase -> q .)
+    W               reduce using rule 51 (lowerCase -> q .)
+    Y               reduce using rule 51 (lowerCase -> q .)
+    Z               reduce using rule 51 (lowerCase -> q .)
+    a               reduce using rule 51 (lowerCase -> q .)
+    b               reduce using rule 51 (lowerCase -> q .)
+    c               reduce using rule 51 (lowerCase -> q .)
+    d               reduce using rule 51 (lowerCase -> q .)
+    e               reduce using rule 51 (lowerCase -> q .)
+    f               reduce using rule 51 (lowerCase -> q .)
+    g               reduce using rule 51 (lowerCase -> q .)
+    h               reduce using rule 51 (lowerCase -> q .)
+    i               reduce using rule 51 (lowerCase -> q .)
+    j               reduce using rule 51 (lowerCase -> q .)
+    k               reduce using rule 51 (lowerCase -> q .)
+    l               reduce using rule 51 (lowerCase -> q .)
+    m               reduce using rule 51 (lowerCase -> q .)
+    n               reduce using rule 51 (lowerCase -> q .)
+    o               reduce using rule 51 (lowerCase -> q .)
+    p               reduce using rule 51 (lowerCase -> q .)
+    q               reduce using rule 51 (lowerCase -> q .)
+    r               reduce using rule 51 (lowerCase -> q .)
+    s               reduce using rule 51 (lowerCase -> q .)
+    t               reduce using rule 51 (lowerCase -> q .)
+    u               reduce using rule 51 (lowerCase -> q .)
+    v               reduce using rule 51 (lowerCase -> q .)
+    x               reduce using rule 51 (lowerCase -> q .)
+    w               reduce using rule 51 (lowerCase -> q .)
+    y               reduce using rule 51 (lowerCase -> q .)
+    z               reduce using rule 51 (lowerCase -> q .)
+    SPACE           reduce using rule 51 (lowerCase -> q .)
+    $end            reduce using rule 51 (lowerCase -> q .)
+
+
+state 50
+
+    (52) lowerCase -> r .
+
+    A               reduce using rule 52 (lowerCase -> r .)
+    B               reduce using rule 52 (lowerCase -> r .)
+    C               reduce using rule 52 (lowerCase -> r .)
+    D               reduce using rule 52 (lowerCase -> r .)
+    E               reduce using rule 52 (lowerCase -> r .)
+    F               reduce using rule 52 (lowerCase -> r .)
+    G               reduce using rule 52 (lowerCase -> r .)
+    H               reduce using rule 52 (lowerCase -> r .)
+    I               reduce using rule 52 (lowerCase -> r .)
+    J               reduce using rule 52 (lowerCase -> r .)
+    K               reduce using rule 52 (lowerCase -> r .)
+    L               reduce using rule 52 (lowerCase -> r .)
+    M               reduce using rule 52 (lowerCase -> r .)
+    N               reduce using rule 52 (lowerCase -> r .)
+    O               reduce using rule 52 (lowerCase -> r .)
+    P               reduce using rule 52 (lowerCase -> r .)
+    Q               reduce using rule 52 (lowerCase -> r .)
+    R               reduce using rule 52 (lowerCase -> r .)
+    S               reduce using rule 52 (lowerCase -> r .)
+    T               reduce using rule 52 (lowerCase -> r .)
+    U               reduce using rule 52 (lowerCase -> r .)
+    V               reduce using rule 52 (lowerCase -> r .)
+    X               reduce using rule 52 (lowerCase -> r .)
+    W               reduce using rule 52 (lowerCase -> r .)
+    Y               reduce using rule 52 (lowerCase -> r .)
+    Z               reduce using rule 52 (lowerCase -> r .)
+    a               reduce using rule 52 (lowerCase -> r .)
+    b               reduce using rule 52 (lowerCase -> r .)
+    c               reduce using rule 52 (lowerCase -> r .)
+    d               reduce using rule 52 (lowerCase -> r .)
+    e               reduce using rule 52 (lowerCase -> r .)
+    f               reduce using rule 52 (lowerCase -> r .)
+    g               reduce using rule 52 (lowerCase -> r .)
+    h               reduce using rule 52 (lowerCase -> r .)
+    i               reduce using rule 52 (lowerCase -> r .)
+    j               reduce using rule 52 (lowerCase -> r .)
+    k               reduce using rule 52 (lowerCase -> r .)
+    l               reduce using rule 52 (lowerCase -> r .)
+    m               reduce using rule 52 (lowerCase -> r .)
+    n               reduce using rule 52 (lowerCase -> r .)
+    o               reduce using rule 52 (lowerCase -> r .)
+    p               reduce using rule 52 (lowerCase -> r .)
+    q               reduce using rule 52 (lowerCase -> r .)
+    r               reduce using rule 52 (lowerCase -> r .)
+    s               reduce using rule 52 (lowerCase -> r .)
+    t               reduce using rule 52 (lowerCase -> r .)
+    u               reduce using rule 52 (lowerCase -> r .)
+    v               reduce using rule 52 (lowerCase -> r .)
+    x               reduce using rule 52 (lowerCase -> r .)
+    w               reduce using rule 52 (lowerCase -> r .)
+    y               reduce using rule 52 (lowerCase -> r .)
+    z               reduce using rule 52 (lowerCase -> r .)
+    SPACE           reduce using rule 52 (lowerCase -> r .)
+    $end            reduce using rule 52 (lowerCase -> r .)
+
+
+state 51
+
+    (53) lowerCase -> s .
+
+    A               reduce using rule 53 (lowerCase -> s .)
+    B               reduce using rule 53 (lowerCase -> s .)
+    C               reduce using rule 53 (lowerCase -> s .)
+    D               reduce using rule 53 (lowerCase -> s .)
+    E               reduce using rule 53 (lowerCase -> s .)
+    F               reduce using rule 53 (lowerCase -> s .)
+    G               reduce using rule 53 (lowerCase -> s .)
+    H               reduce using rule 53 (lowerCase -> s .)
+    I               reduce using rule 53 (lowerCase -> s .)
+    J               reduce using rule 53 (lowerCase -> s .)
+    K               reduce using rule 53 (lowerCase -> s .)
+    L               reduce using rule 53 (lowerCase -> s .)
+    M               reduce using rule 53 (lowerCase -> s .)
+    N               reduce using rule 53 (lowerCase -> s .)
+    O               reduce using rule 53 (lowerCase -> s .)
+    P               reduce using rule 53 (lowerCase -> s .)
+    Q               reduce using rule 53 (lowerCase -> s .)
+    R               reduce using rule 53 (lowerCase -> s .)
+    S               reduce using rule 53 (lowerCase -> s .)
+    T               reduce using rule 53 (lowerCase -> s .)
+    U               reduce using rule 53 (lowerCase -> s .)
+    V               reduce using rule 53 (lowerCase -> s .)
+    X               reduce using rule 53 (lowerCase -> s .)
+    W               reduce using rule 53 (lowerCase -> s .)
+    Y               reduce using rule 53 (lowerCase -> s .)
+    Z               reduce using rule 53 (lowerCase -> s .)
+    a               reduce using rule 53 (lowerCase -> s .)
+    b               reduce using rule 53 (lowerCase -> s .)
+    c               reduce using rule 53 (lowerCase -> s .)
+    d               reduce using rule 53 (lowerCase -> s .)
+    e               reduce using rule 53 (lowerCase -> s .)
+    f               reduce using rule 53 (lowerCase -> s .)
+    g               reduce using rule 53 (lowerCase -> s .)
+    h               reduce using rule 53 (lowerCase -> s .)
+    i               reduce using rule 53 (lowerCase -> s .)
+    j               reduce using rule 53 (lowerCase -> s .)
+    k               reduce using rule 53 (lowerCase -> s .)
+    l               reduce using rule 53 (lowerCase -> s .)
+    m               reduce using rule 53 (lowerCase -> s .)
+    n               reduce using rule 53 (lowerCase -> s .)
+    o               reduce using rule 53 (lowerCase -> s .)
+    p               reduce using rule 53 (lowerCase -> s .)
+    q               reduce using rule 53 (lowerCase -> s .)
+    r               reduce using rule 53 (lowerCase -> s .)
+    s               reduce using rule 53 (lowerCase -> s .)
+    t               reduce using rule 53 (lowerCase -> s .)
+    u               reduce using rule 53 (lowerCase -> s .)
+    v               reduce using rule 53 (lowerCase -> s .)
+    x               reduce using rule 53 (lowerCase -> s .)
+    w               reduce using rule 53 (lowerCase -> s .)
+    y               reduce using rule 53 (lowerCase -> s .)
+    z               reduce using rule 53 (lowerCase -> s .)
+    SPACE           reduce using rule 53 (lowerCase -> s .)
+    $end            reduce using rule 53 (lowerCase -> s .)
+
+
+state 52
+
+    (54) lowerCase -> t .
+
+    A               reduce using rule 54 (lowerCase -> t .)
+    B               reduce using rule 54 (lowerCase -> t .)
+    C               reduce using rule 54 (lowerCase -> t .)
+    D               reduce using rule 54 (lowerCase -> t .)
+    E               reduce using rule 54 (lowerCase -> t .)
+    F               reduce using rule 54 (lowerCase -> t .)
+    G               reduce using rule 54 (lowerCase -> t .)
+    H               reduce using rule 54 (lowerCase -> t .)
+    I               reduce using rule 54 (lowerCase -> t .)
+    J               reduce using rule 54 (lowerCase -> t .)
+    K               reduce using rule 54 (lowerCase -> t .)
+    L               reduce using rule 54 (lowerCase -> t .)
+    M               reduce using rule 54 (lowerCase -> t .)
+    N               reduce using rule 54 (lowerCase -> t .)
+    O               reduce using rule 54 (lowerCase -> t .)
+    P               reduce using rule 54 (lowerCase -> t .)
+    Q               reduce using rule 54 (lowerCase -> t .)
+    R               reduce using rule 54 (lowerCase -> t .)
+    S               reduce using rule 54 (lowerCase -> t .)
+    T               reduce using rule 54 (lowerCase -> t .)
+    U               reduce using rule 54 (lowerCase -> t .)
+    V               reduce using rule 54 (lowerCase -> t .)
+    X               reduce using rule 54 (lowerCase -> t .)
+    W               reduce using rule 54 (lowerCase -> t .)
+    Y               reduce using rule 54 (lowerCase -> t .)
+    Z               reduce using rule 54 (lowerCase -> t .)
+    a               reduce using rule 54 (lowerCase -> t .)
+    b               reduce using rule 54 (lowerCase -> t .)
+    c               reduce using rule 54 (lowerCase -> t .)
+    d               reduce using rule 54 (lowerCase -> t .)
+    e               reduce using rule 54 (lowerCase -> t .)
+    f               reduce using rule 54 (lowerCase -> t .)
+    g               reduce using rule 54 (lowerCase -> t .)
+    h               reduce using rule 54 (lowerCase -> t .)
+    i               reduce using rule 54 (lowerCase -> t .)
+    j               reduce using rule 54 (lowerCase -> t .)
+    k               reduce using rule 54 (lowerCase -> t .)
+    l               reduce using rule 54 (lowerCase -> t .)
+    m               reduce using rule 54 (lowerCase -> t .)
+    n               reduce using rule 54 (lowerCase -> t .)
+    o               reduce using rule 54 (lowerCase -> t .)
+    p               reduce using rule 54 (lowerCase -> t .)
+    q               reduce using rule 54 (lowerCase -> t .)
+    r               reduce using rule 54 (lowerCase -> t .)
+    s               reduce using rule 54 (lowerCase -> t .)
+    t               reduce using rule 54 (lowerCase -> t .)
+    u               reduce using rule 54 (lowerCase -> t .)
+    v               reduce using rule 54 (lowerCase -> t .)
+    x               reduce using rule 54 (lowerCase -> t .)
+    w               reduce using rule 54 (lowerCase -> t .)
+    y               reduce using rule 54 (lowerCase -> t .)
+    z               reduce using rule 54 (lowerCase -> t .)
+    SPACE           reduce using rule 54 (lowerCase -> t .)
+    $end            reduce using rule 54 (lowerCase -> t .)
+
+
+state 53
+
+    (55) lowerCase -> u .
+
+    A               reduce using rule 55 (lowerCase -> u .)
+    B               reduce using rule 55 (lowerCase -> u .)
+    C               reduce using rule 55 (lowerCase -> u .)
+    D               reduce using rule 55 (lowerCase -> u .)
+    E               reduce using rule 55 (lowerCase -> u .)
+    F               reduce using rule 55 (lowerCase -> u .)
+    G               reduce using rule 55 (lowerCase -> u .)
+    H               reduce using rule 55 (lowerCase -> u .)
+    I               reduce using rule 55 (lowerCase -> u .)
+    J               reduce using rule 55 (lowerCase -> u .)
+    K               reduce using rule 55 (lowerCase -> u .)
+    L               reduce using rule 55 (lowerCase -> u .)
+    M               reduce using rule 55 (lowerCase -> u .)
+    N               reduce using rule 55 (lowerCase -> u .)
+    O               reduce using rule 55 (lowerCase -> u .)
+    P               reduce using rule 55 (lowerCase -> u .)
+    Q               reduce using rule 55 (lowerCase -> u .)
+    R               reduce using rule 55 (lowerCase -> u .)
+    S               reduce using rule 55 (lowerCase -> u .)
+    T               reduce using rule 55 (lowerCase -> u .)
+    U               reduce using rule 55 (lowerCase -> u .)
+    V               reduce using rule 55 (lowerCase -> u .)
+    X               reduce using rule 55 (lowerCase -> u .)
+    W               reduce using rule 55 (lowerCase -> u .)
+    Y               reduce using rule 55 (lowerCase -> u .)
+    Z               reduce using rule 55 (lowerCase -> u .)
+    a               reduce using rule 55 (lowerCase -> u .)
+    b               reduce using rule 55 (lowerCase -> u .)
+    c               reduce using rule 55 (lowerCase -> u .)
+    d               reduce using rule 55 (lowerCase -> u .)
+    e               reduce using rule 55 (lowerCase -> u .)
+    f               reduce using rule 55 (lowerCase -> u .)
+    g               reduce using rule 55 (lowerCase -> u .)
+    h               reduce using rule 55 (lowerCase -> u .)
+    i               reduce using rule 55 (lowerCase -> u .)
+    j               reduce using rule 55 (lowerCase -> u .)
+    k               reduce using rule 55 (lowerCase -> u .)
+    l               reduce using rule 55 (lowerCase -> u .)
+    m               reduce using rule 55 (lowerCase -> u .)
+    n               reduce using rule 55 (lowerCase -> u .)
+    o               reduce using rule 55 (lowerCase -> u .)
+    p               reduce using rule 55 (lowerCase -> u .)
+    q               reduce using rule 55 (lowerCase -> u .)
+    r               reduce using rule 55 (lowerCase -> u .)
+    s               reduce using rule 55 (lowerCase -> u .)
+    t               reduce using rule 55 (lowerCase -> u .)
+    u               reduce using rule 55 (lowerCase -> u .)
+    v               reduce using rule 55 (lowerCase -> u .)
+    x               reduce using rule 55 (lowerCase -> u .)
+    w               reduce using rule 55 (lowerCase -> u .)
+    y               reduce using rule 55 (lowerCase -> u .)
+    z               reduce using rule 55 (lowerCase -> u .)
+    SPACE           reduce using rule 55 (lowerCase -> u .)
+    $end            reduce using rule 55 (lowerCase -> u .)
+
+
+state 54
+
+    (56) lowerCase -> v .
+
+    A               reduce using rule 56 (lowerCase -> v .)
+    B               reduce using rule 56 (lowerCase -> v .)
+    C               reduce using rule 56 (lowerCase -> v .)
+    D               reduce using rule 56 (lowerCase -> v .)
+    E               reduce using rule 56 (lowerCase -> v .)
+    F               reduce using rule 56 (lowerCase -> v .)
+    G               reduce using rule 56 (lowerCase -> v .)
+    H               reduce using rule 56 (lowerCase -> v .)
+    I               reduce using rule 56 (lowerCase -> v .)
+    J               reduce using rule 56 (lowerCase -> v .)
+    K               reduce using rule 56 (lowerCase -> v .)
+    L               reduce using rule 56 (lowerCase -> v .)
+    M               reduce using rule 56 (lowerCase -> v .)
+    N               reduce using rule 56 (lowerCase -> v .)
+    O               reduce using rule 56 (lowerCase -> v .)
+    P               reduce using rule 56 (lowerCase -> v .)
+    Q               reduce using rule 56 (lowerCase -> v .)
+    R               reduce using rule 56 (lowerCase -> v .)
+    S               reduce using rule 56 (lowerCase -> v .)
+    T               reduce using rule 56 (lowerCase -> v .)
+    U               reduce using rule 56 (lowerCase -> v .)
+    V               reduce using rule 56 (lowerCase -> v .)
+    X               reduce using rule 56 (lowerCase -> v .)
+    W               reduce using rule 56 (lowerCase -> v .)
+    Y               reduce using rule 56 (lowerCase -> v .)
+    Z               reduce using rule 56 (lowerCase -> v .)
+    a               reduce using rule 56 (lowerCase -> v .)
+    b               reduce using rule 56 (lowerCase -> v .)
+    c               reduce using rule 56 (lowerCase -> v .)
+    d               reduce using rule 56 (lowerCase -> v .)
+    e               reduce using rule 56 (lowerCase -> v .)
+    f               reduce using rule 56 (lowerCase -> v .)
+    g               reduce using rule 56 (lowerCase -> v .)
+    h               reduce using rule 56 (lowerCase -> v .)
+    i               reduce using rule 56 (lowerCase -> v .)
+    j               reduce using rule 56 (lowerCase -> v .)
+    k               reduce using rule 56 (lowerCase -> v .)
+    l               reduce using rule 56 (lowerCase -> v .)
+    m               reduce using rule 56 (lowerCase -> v .)
+    n               reduce using rule 56 (lowerCase -> v .)
+    o               reduce using rule 56 (lowerCase -> v .)
+    p               reduce using rule 56 (lowerCase -> v .)
+    q               reduce using rule 56 (lowerCase -> v .)
+    r               reduce using rule 56 (lowerCase -> v .)
+    s               reduce using rule 56 (lowerCase -> v .)
+    t               reduce using rule 56 (lowerCase -> v .)
+    u               reduce using rule 56 (lowerCase -> v .)
+    v               reduce using rule 56 (lowerCase -> v .)
+    x               reduce using rule 56 (lowerCase -> v .)
+    w               reduce using rule 56 (lowerCase -> v .)
+    y               reduce using rule 56 (lowerCase -> v .)
+    z               reduce using rule 56 (lowerCase -> v .)
+    SPACE           reduce using rule 56 (lowerCase -> v .)
+    $end            reduce using rule 56 (lowerCase -> v .)
+
+
+state 55
+
+    (57) lowerCase -> x .
+
+    A               reduce using rule 57 (lowerCase -> x .)
+    B               reduce using rule 57 (lowerCase -> x .)
+    C               reduce using rule 57 (lowerCase -> x .)
+    D               reduce using rule 57 (lowerCase -> x .)
+    E               reduce using rule 57 (lowerCase -> x .)
+    F               reduce using rule 57 (lowerCase -> x .)
+    G               reduce using rule 57 (lowerCase -> x .)
+    H               reduce using rule 57 (lowerCase -> x .)
+    I               reduce using rule 57 (lowerCase -> x .)
+    J               reduce using rule 57 (lowerCase -> x .)
+    K               reduce using rule 57 (lowerCase -> x .)
+    L               reduce using rule 57 (lowerCase -> x .)
+    M               reduce using rule 57 (lowerCase -> x .)
+    N               reduce using rule 57 (lowerCase -> x .)
+    O               reduce using rule 57 (lowerCase -> x .)
+    P               reduce using rule 57 (lowerCase -> x .)
+    Q               reduce using rule 57 (lowerCase -> x .)
+    R               reduce using rule 57 (lowerCase -> x .)
+    S               reduce using rule 57 (lowerCase -> x .)
+    T               reduce using rule 57 (lowerCase -> x .)
+    U               reduce using rule 57 (lowerCase -> x .)
+    V               reduce using rule 57 (lowerCase -> x .)
+    X               reduce using rule 57 (lowerCase -> x .)
+    W               reduce using rule 57 (lowerCase -> x .)
+    Y               reduce using rule 57 (lowerCase -> x .)
+    Z               reduce using rule 57 (lowerCase -> x .)
+    a               reduce using rule 57 (lowerCase -> x .)
+    b               reduce using rule 57 (lowerCase -> x .)
+    c               reduce using rule 57 (lowerCase -> x .)
+    d               reduce using rule 57 (lowerCase -> x .)
+    e               reduce using rule 57 (lowerCase -> x .)
+    f               reduce using rule 57 (lowerCase -> x .)
+    g               reduce using rule 57 (lowerCase -> x .)
+    h               reduce using rule 57 (lowerCase -> x .)
+    i               reduce using rule 57 (lowerCase -> x .)
+    j               reduce using rule 57 (lowerCase -> x .)
+    k               reduce using rule 57 (lowerCase -> x .)
+    l               reduce using rule 57 (lowerCase -> x .)
+    m               reduce using rule 57 (lowerCase -> x .)
+    n               reduce using rule 57 (lowerCase -> x .)
+    o               reduce using rule 57 (lowerCase -> x .)
+    p               reduce using rule 57 (lowerCase -> x .)
+    q               reduce using rule 57 (lowerCase -> x .)
+    r               reduce using rule 57 (lowerCase -> x .)
+    s               reduce using rule 57 (lowerCase -> x .)
+    t               reduce using rule 57 (lowerCase -> x .)
+    u               reduce using rule 57 (lowerCase -> x .)
+    v               reduce using rule 57 (lowerCase -> x .)
+    x               reduce using rule 57 (lowerCase -> x .)
+    w               reduce using rule 57 (lowerCase -> x .)
+    y               reduce using rule 57 (lowerCase -> x .)
+    z               reduce using rule 57 (lowerCase -> x .)
+    SPACE           reduce using rule 57 (lowerCase -> x .)
+    $end            reduce using rule 57 (lowerCase -> x .)
+
+
+state 56
+
+    (58) lowerCase -> w .
+
+    A               reduce using rule 58 (lowerCase -> w .)
+    B               reduce using rule 58 (lowerCase -> w .)
+    C               reduce using rule 58 (lowerCase -> w .)
+    D               reduce using rule 58 (lowerCase -> w .)
+    E               reduce using rule 58 (lowerCase -> w .)
+    F               reduce using rule 58 (lowerCase -> w .)
+    G               reduce using rule 58 (lowerCase -> w .)
+    H               reduce using rule 58 (lowerCase -> w .)
+    I               reduce using rule 58 (lowerCase -> w .)
+    J               reduce using rule 58 (lowerCase -> w .)
+    K               reduce using rule 58 (lowerCase -> w .)
+    L               reduce using rule 58 (lowerCase -> w .)
+    M               reduce using rule 58 (lowerCase -> w .)
+    N               reduce using rule 58 (lowerCase -> w .)
+    O               reduce using rule 58 (lowerCase -> w .)
+    P               reduce using rule 58 (lowerCase -> w .)
+    Q               reduce using rule 58 (lowerCase -> w .)
+    R               reduce using rule 58 (lowerCase -> w .)
+    S               reduce using rule 58 (lowerCase -> w .)
+    T               reduce using rule 58 (lowerCase -> w .)
+    U               reduce using rule 58 (lowerCase -> w .)
+    V               reduce using rule 58 (lowerCase -> w .)
+    X               reduce using rule 58 (lowerCase -> w .)
+    W               reduce using rule 58 (lowerCase -> w .)
+    Y               reduce using rule 58 (lowerCase -> w .)
+    Z               reduce using rule 58 (lowerCase -> w .)
+    a               reduce using rule 58 (lowerCase -> w .)
+    b               reduce using rule 58 (lowerCase -> w .)
+    c               reduce using rule 58 (lowerCase -> w .)
+    d               reduce using rule 58 (lowerCase -> w .)
+    e               reduce using rule 58 (lowerCase -> w .)
+    f               reduce using rule 58 (lowerCase -> w .)
+    g               reduce using rule 58 (lowerCase -> w .)
+    h               reduce using rule 58 (lowerCase -> w .)
+    i               reduce using rule 58 (lowerCase -> w .)
+    j               reduce using rule 58 (lowerCase -> w .)
+    k               reduce using rule 58 (lowerCase -> w .)
+    l               reduce using rule 58 (lowerCase -> w .)
+    m               reduce using rule 58 (lowerCase -> w .)
+    n               reduce using rule 58 (lowerCase -> w .)
+    o               reduce using rule 58 (lowerCase -> w .)
+    p               reduce using rule 58 (lowerCase -> w .)
+    q               reduce using rule 58 (lowerCase -> w .)
+    r               reduce using rule 58 (lowerCase -> w .)
+    s               reduce using rule 58 (lowerCase -> w .)
+    t               reduce using rule 58 (lowerCase -> w .)
+    u               reduce using rule 58 (lowerCase -> w .)
+    v               reduce using rule 58 (lowerCase -> w .)
+    x               reduce using rule 58 (lowerCase -> w .)
+    w               reduce using rule 58 (lowerCase -> w .)
+    y               reduce using rule 58 (lowerCase -> w .)
+    z               reduce using rule 58 (lowerCase -> w .)
+    SPACE           reduce using rule 58 (lowerCase -> w .)
+    $end            reduce using rule 58 (lowerCase -> w .)
+
+
+state 57
+
+    (59) lowerCase -> y .
+
+    A               reduce using rule 59 (lowerCase -> y .)
+    B               reduce using rule 59 (lowerCase -> y .)
+    C               reduce using rule 59 (lowerCase -> y .)
+    D               reduce using rule 59 (lowerCase -> y .)
+    E               reduce using rule 59 (lowerCase -> y .)
+    F               reduce using rule 59 (lowerCase -> y .)
+    G               reduce using rule 59 (lowerCase -> y .)
+    H               reduce using rule 59 (lowerCase -> y .)
+    I               reduce using rule 59 (lowerCase -> y .)
+    J               reduce using rule 59 (lowerCase -> y .)
+    K               reduce using rule 59 (lowerCase -> y .)
+    L               reduce using rule 59 (lowerCase -> y .)
+    M               reduce using rule 59 (lowerCase -> y .)
+    N               reduce using rule 59 (lowerCase -> y .)
+    O               reduce using rule 59 (lowerCase -> y .)
+    P               reduce using rule 59 (lowerCase -> y .)
+    Q               reduce using rule 59 (lowerCase -> y .)
+    R               reduce using rule 59 (lowerCase -> y .)
+    S               reduce using rule 59 (lowerCase -> y .)
+    T               reduce using rule 59 (lowerCase -> y .)
+    U               reduce using rule 59 (lowerCase -> y .)
+    V               reduce using rule 59 (lowerCase -> y .)
+    X               reduce using rule 59 (lowerCase -> y .)
+    W               reduce using rule 59 (lowerCase -> y .)
+    Y               reduce using rule 59 (lowerCase -> y .)
+    Z               reduce using rule 59 (lowerCase -> y .)
+    a               reduce using rule 59 (lowerCase -> y .)
+    b               reduce using rule 59 (lowerCase -> y .)
+    c               reduce using rule 59 (lowerCase -> y .)
+    d               reduce using rule 59 (lowerCase -> y .)
+    e               reduce using rule 59 (lowerCase -> y .)
+    f               reduce using rule 59 (lowerCase -> y .)
+    g               reduce using rule 59 (lowerCase -> y .)
+    h               reduce using rule 59 (lowerCase -> y .)
+    i               reduce using rule 59 (lowerCase -> y .)
+    j               reduce using rule 59 (lowerCase -> y .)
+    k               reduce using rule 59 (lowerCase -> y .)
+    l               reduce using rule 59 (lowerCase -> y .)
+    m               reduce using rule 59 (lowerCase -> y .)
+    n               reduce using rule 59 (lowerCase -> y .)
+    o               reduce using rule 59 (lowerCase -> y .)
+    p               reduce using rule 59 (lowerCase -> y .)
+    q               reduce using rule 59 (lowerCase -> y .)
+    r               reduce using rule 59 (lowerCase -> y .)
+    s               reduce using rule 59 (lowerCase -> y .)
+    t               reduce using rule 59 (lowerCase -> y .)
+    u               reduce using rule 59 (lowerCase -> y .)
+    v               reduce using rule 59 (lowerCase -> y .)
+    x               reduce using rule 59 (lowerCase -> y .)
+    w               reduce using rule 59 (lowerCase -> y .)
+    y               reduce using rule 59 (lowerCase -> y .)
+    z               reduce using rule 59 (lowerCase -> y .)
+    SPACE           reduce using rule 59 (lowerCase -> y .)
+    $end            reduce using rule 59 (lowerCase -> y .)
+
+
+state 58
+
+    (60) lowerCase -> z .
+
+    A               reduce using rule 60 (lowerCase -> z .)
+    B               reduce using rule 60 (lowerCase -> z .)
+    C               reduce using rule 60 (lowerCase -> z .)
+    D               reduce using rule 60 (lowerCase -> z .)
+    E               reduce using rule 60 (lowerCase -> z .)
+    F               reduce using rule 60 (lowerCase -> z .)
+    G               reduce using rule 60 (lowerCase -> z .)
+    H               reduce using rule 60 (lowerCase -> z .)
+    I               reduce using rule 60 (lowerCase -> z .)
+    J               reduce using rule 60 (lowerCase -> z .)
+    K               reduce using rule 60 (lowerCase -> z .)
+    L               reduce using rule 60 (lowerCase -> z .)
+    M               reduce using rule 60 (lowerCase -> z .)
+    N               reduce using rule 60 (lowerCase -> z .)
+    O               reduce using rule 60 (lowerCase -> z .)
+    P               reduce using rule 60 (lowerCase -> z .)
+    Q               reduce using rule 60 (lowerCase -> z .)
+    R               reduce using rule 60 (lowerCase -> z .)
+    S               reduce using rule 60 (lowerCase -> z .)
+    T               reduce using rule 60 (lowerCase -> z .)
+    U               reduce using rule 60 (lowerCase -> z .)
+    V               reduce using rule 60 (lowerCase -> z .)
+    X               reduce using rule 60 (lowerCase -> z .)
+    W               reduce using rule 60 (lowerCase -> z .)
+    Y               reduce using rule 60 (lowerCase -> z .)
+    Z               reduce using rule 60 (lowerCase -> z .)
+    a               reduce using rule 60 (lowerCase -> z .)
+    b               reduce using rule 60 (lowerCase -> z .)
+    c               reduce using rule 60 (lowerCase -> z .)
+    d               reduce using rule 60 (lowerCase -> z .)
+    e               reduce using rule 60 (lowerCase -> z .)
+    f               reduce using rule 60 (lowerCase -> z .)
+    g               reduce using rule 60 (lowerCase -> z .)
+    h               reduce using rule 60 (lowerCase -> z .)
+    i               reduce using rule 60 (lowerCase -> z .)
+    j               reduce using rule 60 (lowerCase -> z .)
+    k               reduce using rule 60 (lowerCase -> z .)
+    l               reduce using rule 60 (lowerCase -> z .)
+    m               reduce using rule 60 (lowerCase -> z .)
+    n               reduce using rule 60 (lowerCase -> z .)
+    o               reduce using rule 60 (lowerCase -> z .)
+    p               reduce using rule 60 (lowerCase -> z .)
+    q               reduce using rule 60 (lowerCase -> z .)
+    r               reduce using rule 60 (lowerCase -> z .)
+    s               reduce using rule 60 (lowerCase -> z .)
+    t               reduce using rule 60 (lowerCase -> z .)
+    u               reduce using rule 60 (lowerCase -> z .)
+    v               reduce using rule 60 (lowerCase -> z .)
+    x               reduce using rule 60 (lowerCase -> z .)
+    w               reduce using rule 60 (lowerCase -> z .)
+    y               reduce using rule 60 (lowerCase -> z .)
+    z               reduce using rule 60 (lowerCase -> z .)
+    SPACE           reduce using rule 60 (lowerCase -> z .)
+    $end            reduce using rule 60 (lowerCase -> z .)
+
+
+state 59
+
+    (3) frase -> palavra SPACE . frase
+    (3) frase -> . palavra SPACE frase
+    (4) frase -> . palavra
+    (5) palavra -> . upperCase palavra
+    (6) palavra -> . lowerCase palavra
+    (7) palavra -> . upperCase
+    (8) palavra -> . lowerCase
+    (9) upperCase -> . A
+    (10) upperCase -> . B
+    (11) upperCase -> . C
+    (12) upperCase -> . D
+    (13) upperCase -> . E
+    (14) upperCase -> . F
+    (15) upperCase -> . G
+    (16) upperCase -> . H
+    (17) upperCase -> . I
+    (18) upperCase -> . J
+    (19) upperCase -> . K
+    (20) upperCase -> . L
+    (21) upperCase -> . M
+    (22) upperCase -> . N
+    (23) upperCase -> . O
+    (24) upperCase -> . P
+    (25) upperCase -> . Q
+    (26) upperCase -> . R
+    (27) upperCase -> . S
+    (28) upperCase -> . T
+    (29) upperCase -> . U
+    (30) upperCase -> . V
+    (31) upperCase -> . X
+    (32) upperCase -> . W
+    (33) upperCase -> . Y
+    (34) upperCase -> . Z
+    (35) lowerCase -> . a
+    (36) lowerCase -> . b
+    (37) lowerCase -> . c
+    (38) lowerCase -> . d
+    (39) lowerCase -> . e
+    (40) lowerCase -> . f
+    (41) lowerCase -> . g
+    (42) lowerCase -> . h
+    (43) lowerCase -> . i
+    (44) lowerCase -> . j
+    (45) lowerCase -> . k
+    (46) lowerCase -> . l
+    (47) lowerCase -> . m
+    (48) lowerCase -> . n
+    (49) lowerCase -> . o
+    (50) lowerCase -> . p
+    (51) lowerCase -> . q
+    (52) lowerCase -> . r
+    (53) lowerCase -> . s
+    (54) lowerCase -> . t
+    (55) lowerCase -> . u
+    (56) lowerCase -> . v
+    (57) lowerCase -> . x
+    (58) lowerCase -> . w
+    (59) lowerCase -> . y
+    (60) lowerCase -> . z
+
+    A               shift and go to state 7
+    B               shift and go to state 8
+    C               shift and go to state 9
+    D               shift and go to state 10
+    E               shift and go to state 11
+    F               shift and go to state 12
+    G               shift and go to state 13
+    H               shift and go to state 14
+    I               shift and go to state 15
+    J               shift and go to state 16
+    K               shift and go to state 17
+    L               shift and go to state 18
+    M               shift and go to state 19
+    N               shift and go to state 20
+    O               shift and go to state 21
+    P               shift and go to state 22
+    Q               shift and go to state 23
+    R               shift and go to state 24
+    S               shift and go to state 25
+    T               shift and go to state 26
+    U               shift and go to state 27
+    V               shift and go to state 28
+    X               shift and go to state 29
+    W               shift and go to state 30
+    Y               shift and go to state 31
+    Z               shift and go to state 32
+    a               shift and go to state 33
+    b               shift and go to state 34
+    c               shift and go to state 35
+    d               shift and go to state 36
+    e               shift and go to state 37
+    f               shift and go to state 38
+    g               shift and go to state 39
+    h               shift and go to state 40
+    i               shift and go to state 41
+    j               shift and go to state 42
+    k               shift and go to state 43
+    l               shift and go to state 44
+    m               shift and go to state 45
+    n               shift and go to state 46
+    o               shift and go to state 47
+    p               shift and go to state 48
+    q               shift and go to state 49
+    r               shift and go to state 50
+    s               shift and go to state 51
+    t               shift and go to state 52
+    u               shift and go to state 53
+    v               shift and go to state 54
+    x               shift and go to state 55
+    w               shift and go to state 56
+    y               shift and go to state 57
+    z               shift and go to state 58
+
+    palavra                        shift and go to state 4
+    frase                          shift and go to state 62
+    upperCase                      shift and go to state 5
+    lowerCase                      shift and go to state 6
+
+state 60
+
+    (5) palavra -> upperCase palavra .
+
+    SPACE           reduce using rule 5 (palavra -> upperCase palavra .)
+    $end            reduce using rule 5 (palavra -> upperCase palavra .)
+
+
+state 61
+
+    (6) palavra -> lowerCase palavra .
+
+    SPACE           reduce using rule 6 (palavra -> lowerCase palavra .)
+    $end            reduce using rule 6 (palavra -> lowerCase palavra .)
+
+
+state 62
+
+    (3) frase -> palavra SPACE frase .
+
+    $end            reduce using rule 3 (frase -> palavra SPACE frase .)
+
